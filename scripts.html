@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+		<title>EasySales – инструмент увеличения телефонных продаж</title>
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="bundles/bazingajstranslation/js/translator.min.js" ></script>
+        <script src="js/translations/messages/ru.js" async></script>
+        <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js" ></script>
+        <script type="text/javascript" src="js/jquery.cookie.js" ></script>
+        <script type="text/javascript" src="js/jquery.md5.js" ></script>
+ 
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.datepicker-ru.js"></script>
+    <script type="text/javascript" src="js/app.js" async></script>
+    <script type="text/javascript" src="js/appall.js" async></script>
+    <script type="text/javascript" src="js/test.js" async></script>
+    <script type="text/javascript" src="bundles/spuser/js/appuser.js" async></script>
+    <script type="text/javascript" src="bundles/spuser/js/appuserregister.js" async></script>
+    <script type="text/javascript" src="bundles/spsocial/js/appsocial.js" async></script>
+    <script type="text/javascript" src="bundles/spfeedback/js/appfeedback.js" async></script>
+    <script type="text/javascript" src="js/qqfileuploader.js" async></script>
+    <script type="text/javascript" src="bundles/spupload/js/appupload.js" async></script>
+    <script type="text/javascript" src="bundles/spupload/js/appuploadhelper.js" async></script>
+    <script type="text/javascript" src="js/jquery.multiselect.min.js" ></script>
+    <script type="text/javascript" src="js/jquery.multiselect.ru.js" ></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js" async></script>
+
+    <script type="text/javascript" src="js/select2-4.0.13/js/select2.min.js" async></script>
+    <script type="text/javascript" src="js/select2-4.0.13/js/i18n/ru.js" async></script>
+    <script src="cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.js" async></script>
+<script  type = "text/javascript" src="cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/phone-codes/phone.js" async></script>
+
+<script type = "text/javascript"  src="code.highcharts.com/highcharts.js" async></script>
+<script type = "text/javascript"  src="www.gstatic.com/charts/loader.js" async></script>
+<script type = "text/javascript"  src="js/tinymce/tinymce.min.js" async></script>
+<script type = "text/javascript"  src="js/tinymce.init.js" async></script>
+<script type = "text/javascript"  src="js/jquery.scrollTo.min.js" async></script>
+<script type="text/javascript" src="js/jsPlumb-1.7.10-min.js" async></script>
+<script type="text/javascript" src="js/jquery.sorttable.js" async></script>
+<script type="text/javascript" src="bundles/spscript/js/appscript.js" ></script>
+<script type="text/javascript" src="bundles/spscript/js/appscriptfolder.js" async></script>
+<script type="text/javascript" src="bundles/spscript/js/appfields.js" async></script>
+<script type="text/javascript" src="bundles/spscript/js/appvideo.js" async></script>
+<script type="text/javascript" src="bundles/spscript/js/crmfields.js" async></script>
+<script type="text/javascript" src="bundles/spscript/js/apppasstimer.js" async></script>
+<script type="text/javascript" src="bundles/spscript/js/libaddscript.js" async></script>
+<script type="text/javascript" src="bundles/spscript/js/appaccess.js" async></script>
+<script type="text/javascript" src="js/appkeycall.js" async></script>
+<script type="text/javascript" src="bundles/spscript/js/appnotes.js" async></script>
+<script type="text/javascript" src="bundles/spscript/js/appquicklinks.js" async></script>
+<script type="text/javascript" src="bundles/spscript/js/appwebhooks.js" async></script>
+
+<script type="text/javascript" src="bundles/spscript/js/quiz.js" async></script>
+
+
+<script  type = "text/javascript"  src="bundles/spintegrations/js/appintegration.js" async></script>
+<script type = "text/javascript"  src="bundles/spintegrations/js/appintegrationwidgets.js" async></script>
+        <link href="C:\Users\User1\Desktop\hyperscript_pro\bootstrap\css\bootstrap.css" rel="stylesheet" type="text/css" media="screen">
+<link href="C:\Users\User1\Desktop\hyperscript_pro\js\fancybox\jquery.fancybox.css" type="text/css" rel="stylesheet">
+<link href="C:\Users\User1\Desktop\hyperscript_pro\css\jquery-ui.min.css" type="text/css" rel="stylesheet">
+
+
+<link href="C:\Users\User1\Desktop\hyperscript_pro\js\select2-4.0.13\css\select2.min.css" type="text/css" rel="stylesheet">
+<link href="C:\Users\User1\Desktop\hyperscript_pro\js\select2-bootstrap-theme-0.1.0-beta.10\select2-bootstrap.min.css" type="text/css" rel="stylesheet">
+
+<link href="C:\Users\User1\Desktop\hyperscript_pro\css\jquery.multiselect.css" type="text/css" rel="stylesheet">
+<link href="C:\Users\User1\Desktop\hyperscript_pro\css\jquery.multiselect.filter.css" type="text/css" rel="stylesheet">
+<link href="C:\Users\User1\Desktop\hyperscript_pro\css\style.css" type="text/css" rel="stylesheet">
+<link href="C:\Users\User1\Desktop\hyperscript_pro\css\new-core.css" type="text/css" rel="stylesheet">
+            
+	<link href="C:\Users\User1\Desktop\hyperscript_pro\bundles\spscript\css\script_tour.css" type="text/css" rel="stylesheet">
+    <link href="C:\Users\User1\Desktop\hyperscript_pro\themes\hyperscript\css\style.css" rel="stylesheet" type="text/css">
+    <link href="C:\Users\User1\Desktop\hyperscript_pro\themes\hyperscript\css\font.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="C:\Users\User1\Desktop\hyperscript_pro\css\tinymcetextpagestyle.css">
+    <link rel="stylesheet" href="C:\Users\User1\Desktop\hyperscript_pro\cdnjs.cloudflare.com\ajax/libs\jquery-contextmenu\2.7.0\jquery.contextMenu.min.css" type="text/css">
+    <link rel="stylesheet" href="C:\Users\User1\Desktop\hyperscript_pro\bundles\spscript\css\quiz.css" type="text/css">
+        <link href="C:\Users\User1\Desktop\hyperscript_pro\bundles\spscript\css\script.css" type="text/css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+            <!-- Google Tag Manager -->
+    <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js" async></script><script type="text/javascript" async="" src="https://top-fwz1.mail.ru/js/code.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-WMY7V8TFPS&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MHTBG7Q"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MHTBG7Q');</script>
+    <!-- End Google Tag Manager -->
+    
+ 
+<link rel="stylesheet" href="C:\Users\User1\Desktop\hyperscript_pro\js\tinymce\skins\lightgray\skin.min.css"></head>
+
+
+
+<body>
+    <div class="js_editor" style="display: block;">
+        <div class="js_scripts_edit_box top-settings">
+            <div class="sales-mode">
+                <a href="#" class="js_menu js_show_box js_show_constructor active" data-box="js_constructor_box">
+                    <span class="sales-mode-step">1</span> <span id="hs_smenu_constructor" class="js_show_constructor_title">Конструктор</span>
+                    <span class="js_issues_count_box"></span>
+                    <span class="dropdown">
+                        </span></a><a class="dropdown-toggle toggle-constructor-submenu" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="margin-left: -14px; display: inline;">
+                            <span id="hs_smenu_current" class="js_show_box_current">&nbsp;&gt;&nbsp; <span>Схема</span></span>
+                            <span class="caret"></span></a>
+
+                        <ul class="dropdown-menu constructor_submenu_dropdown" style="left:120px">
+                            <li class="active">
+                                <a id="hs_smenu_map" href="#" class="js_show_box js_show_map" data-box="js_map_box">Схема</a>
+                            </li>
+                            <li>
+                                <a id="hs_smenu_notes" href="#" class="js_show_box js_show_notes" data-box="js_notes_box">Заметки</a>
+                            </li>
+                            <li>
+                                <a id="hs_smenu_result" href="#" class="js_show_box js_show_result hidden" data-box="js_result_box">Результаты</a>
+                            </li>
+                            <li>
+                                <a id="hs_smenu_recommendations" href="#" style="opacity: .5; cursor: not-allowed;" class="hidden">
+                                  Рекомендации
+                                </a>
+                            </li>
+                        </ul>
+                    
+                
+				<a id="hs_save_script_btn" class="btn btn-xs js_scripts_action_save js_scripts_action_save_btn_alarm" style="display: inline-block; border-color: rgba(76, 174, 76, 0.224); background-color: rgb(61, 207, 61);">
+					<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Сохранить изменения
+				</a>
+
+                                <a href="#" id="hs_smenu_operators_view" class="js_menu js_scripts_action_view" data-operator_text_view="Текущий скрипт">
+                    <span class="sales-mode-step">2</span> Просмотр оператором
+                </a>
+                <a href="#" id="hs_smenu_quiz_view" class="js_menu js_show_box js_show_quiz_view hidden" data-box="js_quiz_view_box">
+                    <span class="sales-mode-step"><!-- js generate --></span> Демонстрация квиза
+                </a>
+                <a href="#" id="hs_smenu_access" class="js_menu js_show_box js_show_access" data-box="js_access_box">
+                    <span class="sales-mode-step">3</span> Доступ <span class="user_access_count">— <span class="js_user_access_count">0</span></span>
+                </a>
+                <a id="hs_smenu_analytics" href="#" class="js_menu js_show_box js_show_conversion" data-box="js_conversion_box">
+                    <span class="sales-mode-step">4</span> Аналитика
+                </a>
+                <a id="hs_smenu_data" href="#" class="js_menu js_show_box js_show_fields" data-box="js_fields_box">
+                    <span class="sales-mode-step">5</span> Данные</a>
+                <a id="hs_smenu_integration" href="#" class="js_menu js_show_box js_show_integration" data-box="js_integration_box">
+                    <span class="sales-mode-step">6</span> Интеграция
+                </a>
+                            </div>
+        </div>
+
+        <div class="js_scripts_edit_box" style=""></div>
+    </div>
+    <div class="js_box js_constructor_box fav-offset" style="display: block;">
+        <div class="zoom-btns btn-group-vertical" style="display: block;">
+              <a href="#" class="btn btn-default btn-sm js_zoom_plus"><span class="glyphicon glyphicon-plus"></span></a>
+            <a href="#" class="btn btn-default btn-sm js_zoom_reset"><span class="glyphicon glyphicon-record"></span></a>
+            <a href="#" class="btn btn-default btn-sm js_zoom_minus"><span class="glyphicon glyphicon-minus"></span></a>
+        </div>
+        <div class="js_desk" style="width: 800px; height: 600px;"><div class="step is_starred jsplumb-draggable jsplumb-droppable" id="start" style="left: 0px; top: 0px;">
+<div class="text">Начало</div>
+<div class="link_start" data-toggle="tooltip" data-placement="auto left" title="Потяните, чтобы соединить с другим узлом"></div>
+
+<div class="add_step"></div>
+
+<div title="Не указан текст шага" class="no-text-error" style="display: none;"><span class="glyphicon glyphicon-exclamation-sign"></span></div>
+<div class="starred"><span data-toggle="tooltip" data-placement="auto right" title="Скрытый быстрый переход" class="is_starred glyphicon glyphicon-eye-close"></span></div>
+<div class="tasks"><span class="is_starred glyphicon glyphicon-play"></span></div>
+<div class="label label-danger step_unresolved_issues" style="display:none;" title="Нет нужного ответа">0</div>
+</div></div>
+    </div>
+    <div class="js_box js_conversion_box" style="display: none;">
+		<style>
+    #ui-datepicker-div{
+        z-index: 10000 !important;
+    }
+</style>
+<div>
+    <ul class="nav nav-pills script_tabs_analytics" role="tablist" style="margin-top: 15px;">
+        <li role="presentation" class="active">
+            <a href="#script_tab_conversion" aria-controls="script_tab_conversion" role="tab" data-toggle="tab">Сводка по конверсии</a>
+        </li>
+        <li role="presentation" class="">
+            <a href="#script_tab_conversion_to_goals" aria-controls="script_tab_conversion_to_goals" role="tab" data-toggle="tab">Конверсия в цели</a>
+        </li>
+        <li role="presentation" class="">
+            <a href="#script_tab_dynamics" aria-controls="script_tab_dynamics" role="tab" data-toggle="tab">Динамика</a>
+        </li>
+        <li role="presentation" class="">
+            <a href="#script_tab_productivity" aria-controls="script_tab_productivity" role="tab" data-toggle="tab">Эффективность операторов</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" role="tabpanel" id="script_tab_conversion">
+            <div class="form-inline version_stats_sel_wrap">
+                <label for="ie0jg32t23">Номер версии:</label>
+                <select id="ie0jg32t23" class="form-control input-sm version_stats_sel"><option value="1">1</option><option value="Все версии">Все версии</option></select>
+
+                <label style="margin-left: 10px;" for="ie0jg32t25">Оператор:</label>
+                <span class="width-min-120">
+                    <select id="ie0jg32t25" class="form-control input-sm user_stats_sel select2  select2-hidden-accessible" data-select2-id="ie0jg32t25" tabindex="-1" aria-hidden="true"><option data-select2-id="14">Все операторы</option><option value="136521">Куаныш Узакбаев</option></select><span class="select2 select2-container select2-container--bootstrap" dir="ltr" data-select2-id="1" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-ie0jg32t25-container"><span class="select2-selection__rendered" id="select2-ie0jg32t25-container" role="textbox" aria-readonly="true" title="Все операторы">Все операторы</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </span>
+
+
+                <input class="form-control input-sm datepicker js_stats_filter_from hasDatepicker" placeholder="Дата от" id="dp1667381784897">
+                <input class="form-control input-sm datepicker js_stats_filter_to hasDatepicker" placeholder="Дата до" id="dp1667381784898">
+
+                <a href="/scripts/328884/pass_stats_0_0_2022-10-30_2022-11-02.xls" class="btn btn-sm btn-default js_stats_to_excel" data-loading-text="Подготовка файла">Экспорт в Excel</a>
+            </div>
+            <div>
+                <div class="zoom-btns btn-group-vertical" style="display: block;">
+                    <a href="#" class="btn btn-default btn-sm js_stat_zoom_plus"><span class="glyphicon glyphicon-plus"></span></a>
+                    <a href="#" class="btn btn-default btn-sm js_stat_zoom_reset"><span class="glyphicon glyphicon-record"></span></a>
+                    <a href="#" class="btn btn-default btn-sm js_stat_zoom_minus"><span class="glyphicon glyphicon-minus"></span></a>
+                </div>
+                <div class="js_stat_desk" style="width: 800px; height: 600px;"><div class="js_stats_notice">Пока операторы не использовали эту версию скрипта. Статистика отсутствует.</div></div>
+            </div>
+            <div class="js_stats_box_wrap">
+                <div class="js_stats_box">
+                    <div>
+                        <h3>Информация в целом:</h3>
+                        <div>Начато звонков: <span class="stat_runs_count">
+						<span class="count">0</span> звонков (<span class="percent">0</span>%)</span></div>
+                        <div class="stat_unexpected_answer_color">Нет нужного ответа: <span class="stat_runs_with_unexpected_answer_count">
+						<span class="count">0</span> звонков (<span class="percent">0</span>%)</span></div>
+                        <div class="stat_ended_by_client_color">Разговор прерван: <span class="stat_runs_forcefully_interrupted_count">
+						<span class="count">0</span> звонков (<span class="percent">0</span>%)</span></div>
+                        <div class="stat_goal_achieved_color">Успешно завершено: <span class="stat_runs_achieved_goal_count">
+						<span class="count">0</span> звонков (<span class="percent">0</span>%)</span></div>
+                    </div>
+                    <div style="margin-top: 20px;">
+                        Слева вы можете найти информацию о том сколько звонков прервалось на каждом шаге из-за
+                        <span class="stat_unexpected_answer_color">отсутствия нужного ответа</span>
+                        и по <span class="stat_ended_by_client_color">инициативе клиента</span>
+                        , а также процентное отношение проходов по шагу относительно всех проходов по скрипту
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" role="tabpanel" id="script_tab_conversion_to_goals">
+            <div style="margin-top: 15px; margin-bottom: 15px;">
+                <div class="row">
+                    <div class="col-md-2" style="padding-right: 0;">
+                        <select id="ie0jg32t23" class="form-control js_version_conversion_to_goals" disabled="disabled"></select>
+                    </div>
+                    <div class="col-md-3" style="padding-right: 0;">
+                        <select class="form-control js_conversion_to_goals_filter_operator select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="2" tabindex="-1" aria-hidden="true">
+                            <option value="" data-select2-id="4">Выберите оператора</option>
+                        </select><span class="select2 select2-container select2-container--bootstrap" dir="ltr" data-select2-id="3" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-x5xr-container"><span class="select2-selection__rendered" id="select2-x5xr-container" role="textbox" aria-readonly="true" title="Выберите оператора">Выберите оператора</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                    </div>
+
+                    <div class="col-md-2" style="padding-right: 0;">
+                        <input type="text" class="form-control js_conversion_to_goals_filter_from datepicker hasDatepicker" placeholder="Дата от" id="dp1667381784899">
+                    </div>
+                    <div class="col-md-2" style="padding-right: 0;">
+                        <input type="text" class="form-control js_conversion_to_goals_filter_to datepicker hasDatepicker" placeholder="Дата до" id="dp1667381784900">
+                    </div>
+
+                    <div class="col-md-3">
+                        <button class="btn btn-primary js_conversion_to_goals_filter" type="button">Фильтр</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="tab-pane" role="tabpanel" id="script_tab_dynamics">
+            <div style="margin-top: 15px;">
+                <div class="row">
+                    <div class="col-md-3" style="padding-right: 0;">
+                        <input type="text" class="form-control js_dynamic_filter_from datepicker hasDatepicker" placeholder="Дата от" id="dp1667381784901">
+                    </div>
+                    <div class="col-md-3" style="padding-right: 0;">
+                        <input type="text" class="form-control js_dynamic_filter_to datepicker hasDatepicker" placeholder="Дата до" id="dp1667381784902">
+                    </div>
+
+                    <div class="col-md-4" style="padding-right: 0;">
+                        <select class="form-control js_dynamic_filter_operator select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="5" tabindex="-1" aria-hidden="true">
+                            <option value="" data-select2-id="7">Выберите оператора</option>
+                        </select><span class="select2 select2-container select2-container--bootstrap" dir="ltr" data-select2-id="6" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-v3tp-container"><span class="select2-selection__rendered" id="select2-v3tp-container" role="textbox" aria-readonly="true" title="Выберите оператора">Выберите оператора</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                    </div>
+
+                    <div class="col-md-2">
+                        <button class="btn btn-primary js_dynamic_filter" type="button">Фильтр</button>
+                    </div>
+                    <div class="col-md-12">
+                        <div style="padding-top:5px;" class="js_dynamic_filter_date">
+                            Быстрый выбор:
+                            <a href="javascript:void(0);" data-type="today">сегодня</a>,
+                            <a href="javascript:void(0);" data-type="yesterday">вчера</a>,
+                            <a href="javascript:void(0);" data-type="week">7 дней</a>,
+                            <a href="javascript:void(0);" data-type="month">месяц</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div id="chart_div_cnt" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                    <div id="chart_div_duration" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                    <div id="chart_div_successful" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                    <div id="chart_div_no_successful" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                    <div id="chart_div_successful_relation" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                    <div id="chart_div_successful_relation_pie" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="tab-pane" role="tabpanel" id="script_tab_productivity">
+            <div>
+                <div class="form-inline version_stats_sel_wrap">
+                    <label for="ie0jg32t23d">Номер версии:</label>
+                    <select id="ie0jg32t23d" class="form-control input-sm up_version_stats_sel"></select>
+
+                    <label style="margin-left: 10px;" for="ie0jg32t25d">Оператор:</label>
+                    <select id="ie0jg32t25d" class="form-control input-sm up_user_stats_sel select2 select2-hidden-accessible" data-select2-id="ie0jg32t25d" tabindex="-1" aria-hidden="true"></select><span class="select2 select2-container select2-container--bootstrap" dir="ltr" data-select2-id="8" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-ie0jg32t25d-container"><span class="select2-selection__rendered" id="select2-ie0jg32t25d-container" role="textbox" aria-readonly="true"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+                <div class="worker_list" style="margin-top: 10px;"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+	</div>
+    <div class="js_box js_access_box" style="display: none;">
+        <form class="js_access_form" id="hs_access_user_form">
+  <section id="hs--quiz--access-box" class="hidden">
+    <div>
+      <div class="hs--quiz--access-box-co">
+        <div>
+          <div>
+            <h2>Прямая ссылка</h2>
+            <p class="space-paragraph">Скопируйте ссылку для размещения квиза на вашем сайте</p>
+          </div>
+        </div>
+        <div>
+          <input id="quizUrl" class="form-control" type="text" readonly="" style="background: white;">
+          <div id="quizUrlRaw" class="ghost"></div>
+        </div>
+      </div>
+      <footer class="hs--quiz--access-box-fo-2">
+        <button id="copyQuizUrl">
+          Скопировать
+        </button>
+        <button id="openQuizUrl">
+          Открыть
+        </button>
+      </footer>
+    </div>
+    <div>
+      <div class="hs--quiz--access-box-co">
+        <div>
+          <div>
+            <h2>Код для встраивания в сайт</h2>
+            <p>Скопируйте ссылку для размещения квиза на вашем сайте</p>
+            <div class="grid-2">
+              <label>
+                <span>Ширина (px)</span>
+                <input name="quizIframeWidth" class="form-control" type="number" placeholder="">
+              </label>
+              <label>
+                <span>Высота (px)</span>
+                <input name="quizIframeHeight" class="form-control" type="number" placeholder="">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <input id="quizIframeCode" class="form-control" type="text" readonly="" style="background: white;">
+          <div id="quizIframeCodeRaw" class="ghost"></div>
+        </div>
+      </div>
+      <footer class="hs--quiz--access-box-fo-1">
+        <button id="copyQuizIframeCode">
+          Скопировать
+        </button>
+      </footer>
+    </div>
+  </section>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th style="width:70%;vertical-align:top;" colspan="2">
+                <input id="hs_access_form_email" class="form-control js_access_email" type="text" name="email" autocomplete="off" placeholder="введите e-mail пользователя, которого хотите добавить (или несколько через запятую)">
+                <div class="js_email_error"></div>
+            </th>
+            <th style="width:20%;vertical-align:top;">
+                <select id="access_tab__js_access_role" class="form-control js_access_role" name="role">
+                    
+                    <option value="ROLE_SCRIPT_WRITER">админ</option>
+                <option value="ROLE_SCRIPT_READER">оператор</option></select>
+                <div class="js_email_error"></div>
+            </th>
+            <th style="width:10%;vertical-align:top;">
+                <input id="hs_access_form_submit_btn" type="submit" class="btn btn-default js_add_access_user" value="Добавить">
+                <div class="js_glob_error"></div>
+            </th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody><td colspan="3" style="text-align:center;">Записей не найдено.</td></tbody>
+    </table>
+</form>
+    </div>
+    <div class="js_box js_view_box" style="display:none;">
+		<div class="log_wrap">
+            <!-- go.hyper-script notification -->
+            <style>
+                .log .item {
+                    margin-top: 60px;
+                }
+                .go-hyper-script-notification {
+                    position: absolute;
+                    top: 132px;
+                    left: 0;
+                    width: 100%;
+                    height: 0;
+                    background: #e8e8e8;
+                    z-index: 2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    overflow: hidden;
+                }
+                .go-hyper-script-notification a {
+                    color: #333;
+                }
+                .go-hyper-script-notification a:hover,
+                .go-hyper-script-notification a:focus  {
+                    text-decoration: none;
+                }
+                #hs-notification.is-open {
+                    height: 40px;
+                    border-bottom: 1px solid #d5d5d5;
+                    padding: 0 14px;
+                }
+                #view_box_sidebar.is-open {
+                    top: 172px;
+                }
+                .go-hyper-script-notification-close {
+                    position: absolute;
+                    right: 20px;
+                }
+                .go-hyper-script-notification-close button {
+                    background: transparent;
+                    border: none;
+                }
+            </style>
+            <div id="hs-notification" class="go-hyper-script-notification is-open">
+                <a href="https://go.hyper-script.ru/" target="_blank">Привет, мы сделали проход скриптов еще более комфортным, обновили дизайн и внесли много приятных изменений. Переходи в GO и попробуй.<svg style="margin-left: 5px;" xmlns="http://www.w3.org/2000/svg" width="16" height="11" fill="none" stroke="#333" stroke-linecap="round"><path d="M.675 5.43h14.21m-3.479 3.926l3.857-3.857-3.857-3.857"></path></svg></a>
+            </div>
+            <!-- /go.hyper-script notification -->
+            <div class="script-target"><span class="glyphicon glyphicon-record"></span>&nbsp;Цель:&nbsp;<span class="target-content"></span></div>
+			<div class="log">
+			</div>
+        </div>
+        <div class="progressBar">
+            <div class="progressIndicator">
+                <div>
+                    <span class="progressPercent">0</span>% готово
+                </div>
+                <div class="progressLineBack">
+                    <div class="progressLineFill"></div>
+                </div>
+            </div>
+            <button class="talk_is_over btn btn-primary">Разговор окончен</button>
+        </div>
+        <div id="view_box_sidebar" class="view_box_sidebar is-open">
+            <div class="js_starred_box">
+                <h4>Быстрые переходы</h4>
+                <div class="input-group">
+                    <span class="input-group-addon" id="sizing-addon2"><span class="glyphicon glyphicon-search"></span></span>
+                    <input type="text" class="js_starred_search form-control" placeholder="Поиск" aria-describedby="sizing-addon2">
+                </div>
+                <ul class="js_starred_list_operator"></ul>
+            </div>
+            <div class="js_outnotes_box">
+                <h4>Заметки</h4>
+                <div class="outnotes_box-search">
+                    <input type="text" class="form-control input-sm" placeholder="Поиск">
+                    <span class="glyphicon glyphicon-remove js_outnotes_box-reset"></span>
+                </div>
+                <div class="outnotes_box-view hidden">
+                    <div class="outnotes_box-view-close close">×</div>
+                    <h5 class="outnotes_box-title"></h5>
+                    <div class="outnotes_box-content"></div>
+                </div>
+                <div class="outnotes_box-recommend">
+                    <h5>Рекомендованные</h5>
+                </div>
+                <h5 class="outnotes_box-other hidden">Остальные</h5>
+            </div>
+            <div class="js_outfields_box">
+                <h4>Данные</h4>
+            </div>
+        </div>
+    </div>
+    <div class="js_box js_fields_box" style="width: 100%; padding-right: 18px; display: block;">
+        <p class="pull-left">
+    <a href="#" class="btn btn-default js_show_add_field js_from_list only-script">Добавить поле</a>
+</p>
+<p class="pull-right">
+    <a href="#" class="btn btn-default js_fields_excel only-script" data-loading-text="Подготовка файла" data-href="/scripts/328884/pass.csv">Экспорт в Excel</a>
+</p>
+
+<div class="pull-right" style="margin-bottom: 15px;min-width: 680px;">
+
+    <div class="row">
+        <div class="col-md-3" style="padding-right: 0;">
+            <input type="text" class="form-control js_pass_filter_from datepicker hasDatepicker" placeholder="Дата от" id="dp1667381784903">
+        </div>
+        <div class="col-md-3" style="padding-right: 0;">
+            <input type="text" class="form-control js_pass_filter_to datepicker hasDatepicker" placeholder="Дата до" id="dp1667381784904">
+        </div>
+
+        <div class="col-md-4" style="padding-right: 0;">
+            <select class="form-control js_pass_filter_operator only-script">
+                
+            <option value="">Выберите оператора</option><option value="136521">Куаныш Узакбаев</option></select>
+        </div>
+
+        <div class="col-md-1">
+            <button class="btn btn-primary js_pass_filter" type="button">Фильтр</button>
+        </div>
+    </div>
+
+</div>
+
+<div class="clearfix"></div>
+
+<p class="js_pass_count">Количество: <span>0</span></p>
+    <table class="table js_passes_table"><tbody><tr class="ui-sortable"><th class="no-sort th-datetime">Дата</th><th class="no-sort th-datetime">Продолжительность</th><th class="no-sort">Нет нужного ответа</th><th class="no-sort"></th><th class="no-sort"></th></tr></tbody></table></div>
+
+    <div class="js_box js_integration_box" style="display: none;">
+		<div role="tabpanel" class="integration-tabs">
+    <ul class="nav nav-tabs" role="tablist">
+        <li style="margin-left: -15px;" role="presentation" class="active"><a href="#amocrm" role="tab" data-toggle="tab">amoCRM</a></li>
+        <li role="presentation"><a href="#bitrix" role="tab" data-toggle="tab">Битрикс24</a></li>
+                    <li role="presentation"><a href="#skorozvon" role="tab" data-toggle="tab">Скорозвон</a></li>
+            <li role="presentation"><a href="#okk" role="tab" data-toggle="tab">OKK</a></li>
+            <li role="presentation"><a href="#sipuni" role="tab" data-toggle="tab">Sipuni</a></li>
+            <li role="presentation" class="hidden"><a href="#integration_zendesk" role="tab" data-toggle="tab">Zendesk</a></li>
+        
+        <li role="presentation" class="hidden"><a href="#plugins" role="tab" data-toggle="tab">Другие интеграции</a></li>
+
+        <li role="presentation" class="pull-right"><a href="#webhooks" role="tab" data-toggle="tab">Web Hooks</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane" id="plugins">
+            <div class="list-group col-xs-6 js_script_plugins">
+                <a href="#" class="list-group-item js_plugin_template hidden">
+                    <h4 class="list-group-item-heading"><span></span> <span class="glyphicon glyphicon-check install hidden" aria-hidden="true"></span></h4>
+                    <p class="list-group-item-text"></p>
+                </a>
+            </div>
+        </div>
+
+        <div role="tabpanel" class="tab-pane active" id="amocrm">
+
+            <div class="row">
+                <div class="col-md-8">
+                    
+                                          <div id="8muF3NsEky8"><iframe width="560" height="315" src="https://www.youtube.com/embed/8muF3NsEky8?rel=0" frameborder="0" allowfullscreen=""></iframe></div>
+                      <script>
+                        function show8muF3NsEky8(){
+                          $('#8muF3NsEky8').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/8muF3NsEky8?rel=0"' +
+                            ' frameborder="0" allowfullscreen></iframe>')
+                        }
+                      </script>
+
+                                        <p><strong>Интеграция позволяет:</strong></p>
+                    <ol style="list-style: decimal;">
+                        <li>Проходить скрипты, сконструированные в HyperScript, непосредственно из интерфейса
+                    <a target="_blank" href="http://www.amocrm.ru/main/smp/">amoCRM</a>.
+                    <br>Меню скриптов доступно при просмотре карточки Контакта или Сделки
+                    (в&nbsp;том числе новой).</li>
+                        <li>Автоматизировать создание задач amoCRM при прохождении менеджером скриптов непосредственно в
+                    amoCRM. Например, в разговоре менеджер пообещал собеседнику прислать презентацию на e-mail.
+                    В amoCRM у менеджера после прохождения по скрипту автоматически возникает задача в карточке
+                    клиента "Отправить презентацию по e-mail".</li>
+                        <li>Вводить данные при прохождении
+                    скриптов и автоматически сохранять их в CRM</li>
+                    </ol>
+
+                                            <p><strong>Для интеграции</strong> с amoCRM нужно выполнить несколько
+                    простых шагов:</p>
+                        <ol style="list-style: decimal;">
+                            <li>Войти в ваш аккаунт amoCRM под учетной записью пользователя с правами администратора.</li>
+                            <li>Перейти в главном меню в пункт "Настройки", далее – "Интеграции", найти и установить виджет
+                    HyperScript.</li>
+                            <li>Перейти в раздел Контакты, в карточку любого контакта нажать на логотип HyperScript в панели
+                    виджетов справа.</li>
+                            <li>В форме внутри виджета ввести логин и пароль HyperScript для связываемого аккаунта.</li>
+                        </ol>
+                                        <p>
+                        <strong>Предоставление доступа к скрипту коллегам</strong><br>
+                        Чтобы предоставить доступ к скрипту коллегам, введите во вкладке "Доступ" соответствующего скрипта их адреса
+                    электронной почты, используемые в качестве логинов в HyperScript для связанных с amoCRM аккаунтов.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Настройки</h3>
+
+                    <div class="checkbox">
+                        <label>
+                            <input id="hs_amocrm_add_fields_as_note" type="checkbox" class="js_amocrm_add_fields_as_note">
+                            Добавлять данные полей в виде примечания к сделке/контакту<br>
+                            <span class="amocrm_settings_tip">Настраивается для каждого скрипта отдельно</span>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input id="hs_amocrm_add_pass_as_note" type="checkbox" class="js_amocrm_add_pass_as_note">
+                            Добавлять результат прохода скрипта в виде примечания к сделке/контакту<br>
+                            <span class="amocrm_settings_tip">Настраивается для каждого скрипта отдельно</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div role="tabpanel" class="tab-pane" id="bitrix">
+            <div class="row">
+                <div class="col-md-8">
+                    
+                    <p><strong>Увеличьте эффективность телефонных продаж, используя HyperScript для автоматизации скриптов
+                    разговора!</strong></p>
+                    <ol style="list-style: decimal;">
+                        <li>Определите, на каком этапе вы теряете клиентов</li>
+                        <li>Сравнивайте эффективность скриптов и сотрудников</li>
+                        <li>Изменяйте скрипты в одном месте. Все сотрудники увидят обновления в ту же секунду</li>
+                        <li>Сделайте обучение сотрудников более легким</li>
+                    </ol>
+
+                    
+                        <p><strong>Виджет интеграции</strong> доступен в Маркетплейс Битрикс24
+                    <a href="https://www.bitrix24.ru/apps/?app=hyperscript.core">https://www.bitrix24.ru/apps/?app=hyperscript.core</a>.</p>
+                        <ol style="list-style: decimal;">
+                            <li>Необходимо войти в Битрикс24 под учетной записью с правами администратора, перейти в раздел
+                    «Приложения» – «Все приложения» в основном меню.</li>
+                            <li>Затем все менеджеры, которые будут пользоваться скриптами, должны сделать аккаунт на
+                    <a href="http://hyper-script.ru">http://hyper-script.ru</a>, пройдя регистрацию.</li>
+                            <li>После этого каждый менеджер должен войти в Битрикс24, перейти на вкладку «Скрипты» в основном
+                    меню, слева. В основной области будет видна форма авторизации. В эту форму менеджер вводит
+                    СВОИ логин-пароль от аккаунта «HyperScript», которые получил ранее в ходе регистрации на
+                    <a href="http://hyper-script.ru">http://hyper-script.ru</a>.</li>
+                            <li>Аккаунт менеджера привязан. Вам также потребуется выдать доступ к скриптам, чтобы они стали
+                    доступны менеджерам. Это делается следующим образом. Вы создаете скрипт в HyperScript,
+                    переходите на вкладку «Доступ», вписываете в форму e-mail менеджера, под которым он
+                    зарегистрирован в HyperScript (Внимание! Этот e-mail может не совпадать с e-mail, под которым
+                    менеджер зарегистрирован в Битрикс24), этот e-mail всегда виден менеджеру в верхней части его
+                    личного кабинета HyperScript.</li>
+                        </ol>
+
+                    
+                    <p>
+                        <strong>Предоставление доступа к скрипту коллегам</strong><br>
+                        Чтобы предоставить доступ к скрипту коллегам, введите во вкладке "Доступ" соответствующего скрипта их адреса
+                    электронной почты, используемые в качестве логинов в HyperScript для связанных с Битрикс24 аккаунтов.
+                    </p>
+
+                </div>
+
+                <div class="col-md-3">
+                    <h3>Настройки</h3>
+
+                    <div class="checkbox">
+                        <label>
+                            <input id="bitrix_save_when_call_in" type="checkbox" class="js_bitrix_save_when_call_in">
+                            Автоматически сохранять при звонке в сущность<br>
+                            <span class="amocrm_settings_tip">Настраивается для каждого скрипта отдельно</span>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input id="hs_bitrix_add_fields_as_note" type="checkbox" class="js_bitrix_add_fields_as_note">
+                            Добавлять данные полей в виде примечания к сделке/контакту<br>
+                            <span class="amocrm_settings_tip">Настраивается для каждого скрипта отдельно</span>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input id="hs_bitrix_add_pass_as_note" type="checkbox" class="js_bitrix_add_pass_as_note">
+                            Добавлять результат прохода скрипта в виде примечания к сделке/контакту<br>
+                            <span class="amocrm_settings_tip">Настраивается для каждого скрипта отдельно</span>
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <label>
+                            <input id="hs_bitrix_auto_create_lead" type="checkbox" class="js_bitrix_auto_create_lead">
+                            Автоматическое создание лида<br>
+                            <span class="amocrm_settings_tip">Настраивается для каждого скрипта отдельно</span>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input id="hs_bitrix_auto_create_company" type="checkbox" class="js_bitrix_auto_create_company">
+                            Автоматическое создание компании<br>
+                            <span class="amocrm_settings_tip">Настраивается для каждого скрипта отдельно</span>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input id="hs_bitrix_auto_create_deal" type="checkbox" class="js_bitrix_auto_create_deal">
+                            Автоматическое создание сделки<br>
+                            <span class="amocrm_settings_tip">Настраивается для каждого скрипта отдельно</span>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input id="hs_bitrix_auto_create_contact" type="checkbox" class="js_bitrix_auto_create_contact">
+                            Автоматическое создание контакта<br>
+                            <span class="amocrm_settings_tip">Настраивается для каждого скрипта отдельно</span>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input id="hs_bitrix_allow_deal_selection" type="checkbox" class="js_bitrix_allow_deal_selection">
+                            Показывать сделки в окне звонка<br>
+                            <span class="amocrm_settings_tip">Настраивается для каждого скрипта отдельно</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                    <div role="tabpanel" class="tab-pane" id="okk">
+                <div class="row">
+                    <div class="col-md-11">
+                        <p><a href="http://team-okk.ru/">OKK</a> (<a href="http://team-okk.ru/">http://team-okk.ru</a>) – сервис систематического улучшения работы специалистов по работе с клиентами через оценку качества и непрерывную обратную связь.</p>
+                        <p><strong>Интеграция позволяет</strong></p>
+                        <ol style="list-style: decimal;">
+                            <li>Просматривать в списке звонков для прослушивания в ОКК, использовал ли оператор скрипты во время разговора. В скрипте есть смысл тогда, когда его используют.</li>
+                            <li>Просматривать при анализе звонка, по каким именно шагам скрипта шел оператор в ходе разговора. Такая информация показывает, правильно ли использует скрипт оператор и является источником идей для улучшения скрипта.</li>
+                        </ol>
+                        <p><strong>Чтобы подключить HyperScript к OKK, нужно выполнить следующие шаги:</strong></p>
+                        <ol style="list-style: decimal;">
+                            <li>Войти в ОКК под учетной записью администратора аккаунта ОКК.</li>
+                            <li>Перейти в ОКК в раздел «Источники данных».</li>
+                            <li>В блоке «HyperScript» в данном разделе ввести логин и пароль от вашей учетной записи HyperScript.</li>
+                            <li>В появившейся форме соответствия пользователей ОКК пользователям HyperScript установите необходимые значения, выберите скрипты, для которых следует осуществлять импорт и нажмите «Сохранить».</li>
+                            <li>Система будет автоматически импортировать проходы скриптов и связывать с прослушиваемыми в ОКК записями.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="skorozvon">
+                <div class="row">
+                    <div class="col-md-11">
+                        <p><a href="http://skorozvon.ru/">Скорозвон</a> (<a href="http://skorozvon.ru/">http://skorozvon.ru/</a>) – сервис оптимизации процесса продаж по телефону за счет правильной автоматизации, когда все инструменты под рукой: скрипты HyperScript, информация из CRM, интерфейс, позволяющий в один клик переходить от звонка к звонку.</p>
+                        <p>Интеграция позволяет проходить скрипты HyperScript непосредственно в Скорозвоне</p>
+                        <p><strong>Для интеграции нужно выполнить следующие шаги:</strong></p>
+                        <ol style="list-style: decimal;">
+                            <li>Создайте скрипты в HyperScript.</li>
+                            <li>Зайдите в сервис Скорозвон.</li>
+                            <li>Откройте список, кликнув по вашему имени в правом верхнем углу экрана.</li>
+                            <li>Зайдите в раздел Настройки → Интеграции → HyperScript.<br><br><img src="/img/skorozvon/image165.png"></li>
+                            <li>В разделе «Учетная запись» введите регистрационный email HyperScript.</li>
+                            <li>Нажмите «Авторизоваться».</li>
+                            <li>Откроется форма входа в HyperScript. В ней введите регистрационный email и пароль для входа в HyperScript, затем нажмите Войти.<br><br><img src="/img/skorozvon/image166.png"></li>
+                            <li>Кнопка «Загрузить скрипты» станет активной. Нажмите ее, чтобы скрипты из HyperScript загрузились в «Скорозвон».<br><br><img src="/img/skorozvon/image167.png"></li>
+                            <li>Выберите сценарии, которые будут соответствовать каждому скрипту, нажмите кнопку «Сохранить».<br><br><img src="/img/skorozvon/image168.png"><br><strong>Важно!</strong> Одному сценарию может соответствовать только один скрипт.<br><br> </li>
+                            <li>Теперь в карточке звонка у указанных сценариев появилась кнопка «Показать гиперскрипт», при нажатии на которую открывается форма с вашим скриптом.<br><br><img src="/img/skorozvon/image169.png"><br><br><img src="/img/skorozvon/image170.png"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="sipuni">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="integration-sipuni-status" style="display:none">
+                            <span class="integration-sipuni-status-header">Ваш аккаунт интегрирован с Sipuni</span><br>
+                            <a href="#" class="btn btn-default btn-xs js_unlink_sipuni_user">разорвать связь</a>
+                        </div>
+
+                        <p>
+                    <a href="http://sipuni.com?partner=1089" target="_blank">Sipuni</a> – Виртуальная облачная АТС<br>
+                    <a href="http://sipuni.com?partner=1089" class="btn btn-default btn-xs" target="_blank">Узнать подробнее о сервисе</a><br><br>
+                    <strong>Интеграция позволяет</strong> автоматический отображать нужный вам скрипт
+                при входящем звонке. При этом вы можете находится на любой странице.</p>
+                        <p><strong>Для интеграции</strong> с Sipuni нужно выполнить несколько шагов:</p>
+                        <ol style="list-style: decimal;">
+                            <li>Нажать кнопку "Авторизоваться" справа. В случае если вы авторизованы в Sipuni
+                    привязка произойдет автоматически. В противном случае от вас потребуется
+                    авторизоваться в Sipuni.</li>
+                            <li>В результате справа отобразится строка, называемая хеш.
+                Сообщите ее вашим коллегам если у них нет аккаунта в Sipuni.</li>
+                            <li>Если у вас нет аккаунта в Sipuni вы должны получить хеш от
+                администратора вашего аккаунта.</li>
+                            <li>Введите ваш короткий номер в Sipuni.</li>
+                            <li>Выберите скрипт, который будет отображаться при входящем звонке.</li>
+                            <li>Нажмите "Сохранить".</li>
+                            <li>Установите <a target="_blank" href="https://chrome.google.com/webstore/detail/hefgdbpebgkbgblmnocheljcehalgofb">расширение HyperScript</a> для браузера Chrome.</li>
+                            <li>Введите ваш логин и пароль от HyperScript в расширении.</li>
+                        </ol>
+
+                        <p>
+                            <strong>Предоставление доступа к скрипту коллегам</strong><br>
+                            Чтобы предоставить доступ к скрипту коллегам, введите во вкладке "Доступ" соответствующего скрипта их адреса
+                    электронной почты.
+                        </p>
+
+
+
+
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Настройки</h3>
+
+                        <div class="form-group integrated-sipuni-status">
+                            <label>Авторизуйтесь в Sipuni</label>
+                            <a href="https://sipuni.com/ru_RU/login?returnUrl=https://hyper-script.ru/api/sipuni/login?hash=%25key%25" class="btn btn-default js_link_sipuni_user">Авторизация</a>
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                                                    Или введите полученный от администратора хеш
+                                
+                                </label>
+                            <input placeholder="Хэш" id="hs_sipuni_integration" type="text" class="js_sipuni_integration form-control" value="">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Введите ваш внутренний короткий номер</label>
+                            <input placeholder="Короткий номер" id="hs_sipuni_phone" type="text" class="js_sipuni_phone form-control" value="">
+                        </div>
+                        <div class="form-group">
+                            <label>Выберите скрипт который будет отображаться при входящем звонке</label>
+                            <select id="hs_sipuni_script_id" class="js_sipuni_script_id form-control">
+                                <option></option>
+                                                                    <option value="328884">ff</option>
+                                                                    <option value="328869">Шаблон инструкции Обработка входящих документов</option>
+                                                                    <option value="328868">Шаблон исходящего звонка по заявке интернет-магазина</option>
+                                                                    <option value="328870">ыввы</option>
+                                                            </select>
+                        </div>
+                        <button type="button" class="btn btn-default js_sipuni_save" data-apihref="https://hyper-script.ru/api/sipuni/login">Сохранить</button>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="integration_zendesk">
+                <div class="row">
+                    <div class="col-md-11">
+                        
+                        <p><a href="https://www.zendesk.com/" target="_blank">Zendesk</a>  – сервис систематического улучшения работы специалистов по работе с клиентами через оценку качества и непрерывную обратную связь.</p>
+                        <p><strong>Интеграция позволяет</strong></p>
+                        <ol style="list-style: decimal;">
+                            <li>Просматривать в списке звонков для прослушивания в Zendesk, использовал ли оператор скрипты во время разговора. В скрипте есть смысл тогда, когда его используют.</li>
+                            <li>Просматривать при анализе звонка, по каким именно шагам скрипта шел оператор в ходе разговора. Такая информация показывает, правильно ли использует скрипт оператор и является источником идей для улучшения скрипта.</li>
+                        </ol>
+                        <p><strong>Чтобы подключить HyperScript к Zendesk, нужно выполнить следующие шаги:</strong></p>
+                        <ol style="list-style: decimal;">
+                            <li>Войти в Zendesk под учетной записью администратора аккаунта.</li>
+                            <li>Перейти в Zendesk в раздел «Администрирование».</li>
+                            <li>В блоке «HyperScript» в данном разделе ввести логин и пароль от вашей учетной записи HyperScript.</li>
+                            <li>В появившейся форме соответствия пользователей ОКК пользователям HyperScript установите необходимые значения, выберите скрипты, для которых следует осуществлять импорт и нажмите «Сохранить».</li>
+                            <li>Система будет автоматически импортировать проходы скриптов и связывать с Zendesk записями.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        
+        <div role="tabpanel" class="tab-pane" id="webhooks">
+            <div class="row">
+                <div class="col-md-11">
+                    <p><strong>Web Hooks</strong></p>
+
+                    <p>
+                        
+                    Вы можете оповещать сторонние приложения о событиях, произошедших в HyperScript,
+                    посредством отправки уведомлений. Для этого просто укажите URL, на который Вам будет отправлен Web Hook
+                
+                    </p>
+
+                    <div class="row">
+                        <form class="col-lg-6 js_form_script_webhooks">
+                            <div class="form-group js_webhook hidden js_webhook_template form-inline">
+                                <input type="url" style="width:95%; vertical-align: initial;" class="form-control" placeholder="Укажите URL сайта - https://yoursite.com" name="webhooks[]">
+                                <a style="color:black;" href="javascript:void(0);" class="js_webhook_remove">
+                                    <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                </a>
+                                <div class="clearfix"></div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <div class="js_glob_error"></div>
+                            <a href="#add">+ Добавить хук</a>
+                            </div>
+                            <div id="stepWebHooks">
+
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success">Сохранить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+	</div>
+    <div class="js_box js_notes_box" style="display: none;">
+        <div class="notes_box">
+
+    <div class="col-md-12">
+
+        <h2>Заметки</h2>
+        <p>
+            <a id="hs_add_note" href="#" class="btn btn-success js_new_note_modal">Добавить заметку</a>
+        </p>
+
+        <ul id="notes_crud_list_wrapper" class="notes_box__items ui-sortable"></ul>
+    </div>
+    
+</div>
+    </div>
+
+    <div class="js_box js_result_box" style="display: none;">
+        <div class="hs-quiz__result-box">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="hs-quiz__result-box__toggle__container">
+          <div class="hs-quiz__result-box__toggle">
+            <div class="btn-group btn-toggle">
+              <button class="btn btn-sm btn-default" id="result-toggle-btn-on">ON</button>
+              <button class="btn btn-sm btn-default active btn-primary" id="result-toggle-btn-off">OFF</button>
+            </div>
+          </div>
+          <div>
+            <h2>
+              Отображать результаты прохождения квиза
+            </h2>
+            <p>
+              В конце квиза пользователю будет отображаться результат на основе количества баллов, набранных им
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Заполните количество баллов за ответы ниже</h2>
+        <p>На основе набранных баллов пользователю будет отображаться тот или иной результат квиза. Например в одном случае будет отображаться "Молодец", а в другом "Поработай ещё"</p>
+        <div id="hs-quiz-quest-container">
+          <!-- js-generate -->
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Кнопка "Показать результат"</h2>
+        <p>В конце квиза пользователю будет отображаться результат, вы можете изменить текст кнопки "Показать результат"</p>
+      </div>
+      <div class="col-md-3">
+        <label style="
+            font-size: 12px;
+            color: #adadad;
+            margin: 0px;
+            font-weight: 400;
+          ">
+          Текст:
+        </label>
+        <input class="form-control" id="resultButtonName" value="Показать результат">
+      </div>
+      <div class="col-md-9">
+        <p style="
+            font-size: 12px;
+            color: #adadad;
+            margin: 0px;
+            font-weight: 400;
+          ">
+          Превью кнопки:
+        </p>
+        <button id="resultButtonNamePreview">Показать результат</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Что увидит пользователь в результате</h2>
+        <button style="margin: 0 0 20px 0;" type="button" class="btn btn-default add-result-to-quiz" data-cy="add-result-to-quiz">
+          Добавить результат
+        </button>
+        <div id="hs-quiz-results-container">
+          <!-- js-generate -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+    <div class="js_box js_quiz_view_box" style="display: none;">
+        <section id="quiz-view-box" class="hs-quiz__quiz-view-box hidden">
+  <iframe id="clientQuiz" width="100%" height="100%" src="https://quiz.hyper-script.ru?hot=true" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</section>
+    </div>
+    <div class="limit_exceeded" style="display: none;">
+        <div class="content">
+    <div class="limit_exceeded_owner">
+        <div>Для того, чтобы снова использовать данный скрипт, вам нужно произвести оплату. Так как владельцем скрипта являетесь вы, и пробный период на вашем аккаунте закончился.</div>
+        <div>
+            <a href="/billing" class="btn btn-success">Оплатить сейчас</a>
+        </div>
+        <div class="limit_exceeded_manager">
+            <div>Если у вас остались вопросы по использованию продукта или оплате, вы можете обратиться к вашему персональному менеджеру</div>
+            <div class="limit_exceeded_manager_contacts">
+                <span class="limit_exceeded_manager_name">Ксенофонтова Надежда</span><br>
+                +7 (495) 981-43-23, доб. 305<br>
+                <a href="mailto:nks@hyper-script.ru">nks@hyper-script.ru</a>
+            </div>
+        </div>
+    </div>
+    <div class="limit_exceeded_operator">
+        Вам предоставлен доступ к данному скрипту пользователем <span class="username"></span>, однако вы не можете им
+        воспользоваться, поскольку у <span class="username"></span> нет достаточного количества оплаченных пользователей.
+    </div>
+</div>
+</div>
+<div class="modal" id="show_add_field">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Новое поле</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control js_find_input" autofocus="" placeholder="Поиск">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default js_find" type="button" title="Поиск">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="js_find_result"></div>
+                <div class="js_find_hidden">
+
+                    <input name="is_from_crm" class="hidden" type="checkbox" id="field_is_from_crm">
+                    <input name="sys_name" type="hidden" id="field_sys_name">
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#tab_new" aria-controls="tab_new" role="tab" data-toggle="tab">Новое</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#tab_inuse" aria-controls="tab_inuse" role="tab" data-toggle="tab">Уже используется</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="tab_new">
+                            <div class="form-group">
+                                <label class="control-label" for="field_name">Название</label>
+                                <input name="name" type="text" class="form-control" id="field_name" placeholder="Название">
+                            </div>
+
+                            <div>
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#tab_new_simple" aria-controls="tab_new_simple" role="tab" data-toggle="tab">Простое</a>
+                                    </li>
+                                    <li class="only-script" role="presentation">
+                                        <a href="#tab_new_crm" aria-controls="tab_new_crm" role="tab" data-toggle="tab">CRM</a>
+                                    </li>
+                                    <li class="only-script" role="presentation">
+                                        <a href="#tab_new_other" aria-controls="tab_new_other" role="tab" data-toggle="tab">Данные оператора</a>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="tab_new_simple">
+                                        <div class="form-group">
+                                            <label for="field_type">Тип</label>
+                                            <select name="type" id="field_type" class="form-control js_field_type_selector">
+                                                <option value="text">Текст</option>
+                                                <option value="textarea">Текстовое поле</option>
+                                                <option value="checkbox">Галочка</option>
+                                                <option value="number">Число</option>
+                                                <option value="date">Дата</option>
+                                                <option value="multilist">Мультисписок</option>
+                                            </select>
+                                            <div class="tab_new_simple_field_addtype">
+                                                <div class="field_addtype_list field_addtype_text hidden">
+                                                        <ul class="list-unstyled list-inline">
+                                                                <li><a href="#">Без маски</a></li>
+                                                                <li><a href="#" data-option="address">Адрес</a></li>
+                                                            </ul>
+                                                </div>
+                                                <div class="field_addtype_list field_addtype_number">
+                                                        <ul class="list-unstyled list-inline">
+                                                                <li><a href="#tab_field_addtype_number_simple" data-toggle="tab">Простое число</a></li>
+                                                                <li><a href="#tab_field_addtype_number_formula" data-toggle="tab" data-option="numberFormula">Формула</a></li>
+                                                            </ul>
+                                                        <!-- Tab panes -->
+                                                        <div class="tab-content">
+                                                            <div id="tab_field_addtype_number_simple" class="tab-pane active"></div>
+                                                            <div id="tab_field_addtype_number_formula" class="tab-pane">
+                                                                <div class="form-horizontal">
+                                                                    <div class="form-group">
+                                                                        <div class="col-sm-8">
+                                                                            <div name="field_addtype_number_formula" contenteditable="true" type="text" class="form-control js_number_formula" id="field_addtype_number_formula" placeholder="Формула"></div>
+                                                                        </div>
+                                                                        <div class="col-sm-4 validation">
+                                                                                <span class="valid"><span class="glyphicon glyphicon-ok"></span></span>
+                                                                                <span class="error"><span class="glyphicon glyphicon-warning-sign"></span> Невалидная формула
+                                                                        </span></div>
+                                                                    </div>
+                                                                    <div class="options js_number_formula_options"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="checkbox pull-left">
+                                                                <label>
+                                                                    <input name="readonly" type="checkbox" id="readonly" class="checkbox readonly"> Только для чтения
+                                                                </label>
+                                                            </div>
+                                                            <div style="clear:both;"></div>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                            <ul class="hidden tab_new_simple_field_addtype list-unstyled list-inline">
+                                                <li><a href="#" class="active">Без маски</a></li>
+                                                <li><a href="#" data-option="address">Адрес</a></li>
+                                            </ul>
+                                            <ul class="hidden list-unstyled multilist_values js_multilist_values">
+                                                <div>Значения списка</div>
+                                                <li class="js_multilist_values_li_template hidden">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control">
+                                                        <span class="input-group-btn">
+        <button class="btn btn-danger js_multilist_remove" type="button"><i class="glyphicon glyphicon-remove"></i></button>
+      </span>
+                                                    </div>
+                                                </li>
+                                                <li class="multilist_values_add">
+                                                    <button class="btn btn-default js_multilist_add" type="button"><i class="glyphicon glyphicon-plus"></i></button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="tab_new_crm">
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs" role="tablist" style="margin-top:15px">
+                                            <li role="presentation" class="active">
+                                                <a href="#tab_new_crm_standart" aria-controls="tab_new_crm_standart" role="tab" data-toggle="tab">Стандартные</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a href="#tab_new_crm_user" aria-controls="tab_new_crm_user" role="tab" data-toggle="tab">Пользовательское</a>
+                                            </li>
+                                        </ul>
+                                        <!-- Tab panes -->
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane active" id="tab_new_crm_standart"></div>
+                                            <div role="tabpanel" class="tab-pane" id="tab_new_crm_user">
+                                                <div class="form-group" style="margin-top: 10px;">
+                                                    <label class="control-label" for="field_name">Точное название поля в CRM</label>
+                                                    <input name="field_name_for_crm" type="text" class="form-control" id="field_name_for_crm" placeholder="Точное название поля в CRM">
+                                                                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="tab_new_other"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="tab_inuse">
+                          <div class="scrollable">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Отмена</button>
+                <input type="hidden" class="js_modal_field_id">
+                <button type="button" class="btn btn-primary js_add_field">Добавить</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="show_view_pass">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Схема прохода</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <b>Оператор:</b> <span class="js_operator"></span><br>
+                    <b>Источник:</b> <span class="label label-default js_source"></span>
+                </p>
+                <div class="pass-log">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="show_add_video">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Добавление видео</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control js_video_url_input" autofocus="" placeholder="Вставьте ссылку на видео с Youtube">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default js_video_add" type="button" title="Найти видео">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="js_video_error" style="display: none;">
+                    <div class="alert alert-danger"></div>
+                </div>
+                <div class="js_video_preview" style="display: none;">
+                    <input type="hidden" class="js_yt_video_id">
+                    <iframe frameborder="0" id="ytVideoPreview" width="100%" height="300"></iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Отмена</button>
+                <button type="button" class="btn btn-primary js_video_save" disabled="disabled">Добавить</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="user_profile">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Пожалуйста, заполните данные профиля, чтобы продолжить</h4>
+            </div>
+            <div class="modal-body">
+                                        <div class="form-group">
+                            <label for="profile_surname">Фамилия</label>
+                            <input type="text" class="form-control" id="profile_surname" name="profile_surname">
+                        </div>
+                        <div class="form-group">
+                            <label for="profile_name">Имя</label>
+                            <input type="text" class="form-control" id="profile_name" name="profile_name">
+                        </div>
+                        <div class="form-group">
+                            <label for="profile_phone">Телефон</label>
+                            <input type="text" class="form-control" id="profile_phone" name="profile_phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="profile_company">Компания</label>
+                            <input type="text" class="form-control" id="profile_company" name="profile_company">
+                        </div>
+                                                <div class="form-group">
+                            <label for="profile_users_count">Количество пользователей</label>
+                            <select class="form-control" id="profile_users_count" name="profile_users_count">
+                                <option value="">–</option>
+                                <option value="1-3">1–3</option>
+                                <option value="4-10">4-10</option>
+                                <option value="gr10">&gt; 10</option>
+                            </select>
+                        </div>
+                                                            </div>
+            <div class="modal-footer">
+                <button id="hs_user_profile_reg_btn" type="button" class="btn btn-primary js_profile_continue" data-loading-text="Сохранение...">Продолжить</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="rules_agreement">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Пожалуйста, ознакомьтесь с офертой и политикой конфиденциальности</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input class="js_rules_agreement" type="checkbox" name="rules_agreement" id="hs_rules_agreement_field" value="1">
+                            Согласен(сна) с условиями <a href="/oferta" target="_blank">оферты</a> и <a href="/privacy" target="_blank">политики конфиденциальности</a>
+                        </label>
+                        <div class="form-row_error js_rules_agreement_error"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="hs_rules_agreement_btn" type="button" class="btn btn-primary js_rules_agreement_continue" data-loading-text="Сохранение..." autocomplete="off">Продолжить</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="order_script_modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Заказать скрипт</h4>
+            </div>
+            <div class="modal-body">
+                <div class="order-form">
+                    <div class="form-group">
+                        <label for="order_surname">Фамилия</label>
+                        <input type="text" class="form-control" id="order_surname" name="order_surname">
+                    </div>
+                    <div class="form-group">
+                        <label for="order_name">Имя</label>
+                        <input type="text" class="form-control" id="order_name" name="order_name">
+                    </div>
+                    <div class="form-group">
+                        <label for="order_phone">Телефон</label>
+                        <input type="text" class="form-control" id="order_phone" name="order_phone">
+                    </div>
+                </div>
+                <div class="order-success">
+                    <h4>Ваша заявка принята. Спасибо!</h4>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                <button type="button" class="btn btn-primary js_send_order_script">Отправить</button>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .form-control .select2-choice {
+        height: 32px;
+    }
+</style>
+<div class="modal" id="show_edit_note">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Редактировать заметку</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="control-label" for="edit_note_name">Заголовок</label>
+                    <input name="name" type="text" class="form-control" id="edit_note_name" placeholder="Название">
+                </div>
+                <div class="form-group">
+                    <label for="edit_note_content">Текст</label>
+                    <div id="mceu_9" class="mce-tinymce mce-container mce-panel" hidefocus="1" tabindex="-1" role="application" style="visibility: hidden; border-width: 1px;"><div id="mceu_9-body" class="mce-container-body mce-stack-layout"><div id="mceu_10" class="mce-toolbar-grp mce-container mce-panel mce-stack-layout-item mce-first" hidefocus="1" tabindex="-1" role="group"><div id="mceu_10-body" class="mce-container-body mce-stack-layout"><div id="mceu_11" class="mce-container mce-toolbar mce-stack-layout-item mce-first mce-last" role="toolbar"><div id="mceu_11-body" class="mce-container-body mce-flow-layout"><div id="mceu_12" class="mce-container mce-flow-layout-item mce-first mce-last mce-btn-group" role="group"><div id="mceu_12-body"><div id="mceu_7" class="mce-widget mce-btn mce-first" tabindex="-1" aria-labelledby="mceu_7" role="button" aria-label="Bold"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-bold"></i></button></div><div id="mceu_8" class="mce-widget mce-btn mce-last" tabindex="-1" aria-labelledby="mceu_8" role="button" aria-label="Italic"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-italic"></i></button></div></div></div></div></div></div></div><div id="mceu_13" class="mce-edit-area mce-container mce-panel mce-stack-layout-item mce-last" hidefocus="1" tabindex="-1" role="group" style="border-width: 1px 0px 0px;"><iframe id="edit_note_content_ifr" frameborder="0" allowtransparency="true" title="Текстовое поле. Нажмите ALT-F9 чтобы вызвать меню, ALT-F10 панель инструментов, ALT-0 для вызова помощи." src="javascript:&quot;&quot;" style="width: 100%; height: 100px; display: block;"></iframe></div></div></div><textarea id="edit_note_content" class="note_tinymce" aria-hidden="true" style="display: none;"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="edit_note_visibility">Область видимости</label>
+                    <select class="form-control" id="edit_note_visibility">
+                        <option value="script">Текущий скрипт</option>
+                        <option value="all">Все</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="edit_note_category">Рубрика</label>
+                    <select class="form-control select2" id="edit_note_category"></select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary js_update_note">Сохранить</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="show_edit_note">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Редактировать заметку</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="control-label" for="edit_note_name">Заголовок</label>
+                    <input name="name" type="text" class="form-control" id="edit_note_name" placeholder="Название">
+                </div>
+                <div class="form-group">
+                    <label for="edit_note_content">Текст</label>
+                    <div id="mceu_9" class="mce-tinymce mce-container mce-panel" hidefocus="1" tabindex="-1" role="application" style="visibility: hidden; border-width: 1px;"><div id="mceu_9-body" class="mce-container-body mce-stack-layout"><div id="mceu_10" class="mce-toolbar-grp mce-container mce-panel mce-stack-layout-item mce-first" hidefocus="1" tabindex="-1" role="group"><div id="mceu_10-body" class="mce-container-body mce-stack-layout"><div id="mceu_11" class="mce-container mce-toolbar mce-stack-layout-item mce-first mce-last" role="toolbar"><div id="mceu_11-body" class="mce-container-body mce-flow-layout"><div id="mceu_12" class="mce-container mce-flow-layout-item mce-first mce-last mce-btn-group" role="group"><div id="mceu_12-body"><div id="mceu_7" class="mce-widget mce-btn mce-first" tabindex="-1" aria-labelledby="mceu_7" role="button" aria-label="Bold"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-bold"></i></button></div><div id="mceu_8" class="mce-widget mce-btn mce-last" tabindex="-1" aria-labelledby="mceu_8" role="button" aria-label="Italic"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-italic"></i></button></div></div></div></div></div></div></div><div id="mceu_13" class="mce-edit-area mce-container mce-panel mce-stack-layout-item mce-last" hidefocus="1" tabindex="-1" role="group" style="border-width: 1px 0px 0px;"><iframe id="edit_note_content_ifr" frameborder="0" allowtransparency="true" title="Текстовое поле. Нажмите ALT-F9 чтобы вызвать меню, ALT-F10 панель инструментов, ALT-0 для вызова помощи." src="javascript:&quot;&quot;" style="width: 100%; height: 100px; display: block;"></iframe></div></div></div><textarea id="edit_note_content" class="note_tinymce" aria-hidden="true" style="display: none;"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="edit_note_visibility">Область видимости</label>
+                    <select class="form-control" id="edit_note_visibility">
+                        <option value="script">Текущий скрипт</option>
+                        <option value="all">Все</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="edit_note_category">Рубрика</label>
+                    <select class="form-control select2" id="edit_note_category"></select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary js_update_note">Сохранить</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="show_new_quicklink">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Новый быстрый переход</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="control-label" for="new_quicklink_name">Название</label>
+                    <input name="name" type="text" class="form-control" id="new_quicklink_name" placeholder="Название">
+                </div>
+                <div class="form-group target_step">
+                    <label for="new_quicklink_step">Выбор шага</label>
+                    <input type="text" class="form-control js_target_step" id="new_quicklink_step" value="" placeholder="Поиск шага">
+                    <input class="js_step_target_hidden" type="hidden" value="">
+                    <input class="js_step_script_target_hidden" type="hidden" value="">
+                    <span class="new_target_hint"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;Шаг не найден <b></b></span>
+                </div>
+            </div>
+            <div class="modal-footer"><span id="quick-link-error-message"></span>
+                <button id="hs_add_quicklink_form_button" type="button" class="btn btn-primary js_add_quicklink">Добавить быстрый переход</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="show_save_fatal_error">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: red; color: #fff; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                                <h4 class="modal-title">Ошибка сохранения скрипта</h4>
+            </div>
+            <div class="modal-body">
+                                    <h4>Что случилось</h4>
+                    <p>Мы не смогли сохранить на сервер изменения в вашем скрипте. Это исключительный случай, так никогда не должно происходить. Но, на всякий случай, мы предусмотрели и его.</p>
+                    <h4>Что нужно делать</h4>
+                    <ol style="list-style: decimal">
+                        <li>Пожалуйста, не паникуйте. Мы восстановим ваши изменения. Следуйте инструкциям ниже.</li>
+                        <li style="font-weight: bold; color: red;">НИ В КОЕМ СЛУЧАЕ НЕ ЗАКРЫВАЙТЕ ЭТО ОКНО БРАУЗЕРА, ИНАЧЕ ИЗМЕНЕНИЯ БУДУТ ПОТЕРЯНЫ НАВСЕГДА!</li>
+                        <li>Скопируйте из поля ниже <b>ВЕСЬ</b> текст (там есть прокрутка; это резервная копия ваших изменений), сохраните на своем компьютере (например, в Word или Блокнот) и отправьте на <a href="mailto:support@hyper-script.ru">support@hyper-script.ru</a></li>
+                    </ol>
+                    <textarea id="hs_script_serialized_backup" class="form-control" readonly="" style="outline: 0 none; box-shadow: none; height: 200px;"></textarea>
+                    <ol style="list-style: decimal; margin-top: 10px;" start="4">
+                        <li>Свяжитесь с нами по телефону +7&nbsp;(495)&nbsp;981&nbsp;43&nbsp;23 и расскажите о случившемся</li>
+                    </ol>
+                            </div>
+                    </div>
+    </div>
+</div>
+<div class="modal fade" id="access_folder" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title">Дать доступ ко всем скриптам в этой папке</h4>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th style="width:70%;vertical-align:top;" colspan="2">
+                            <input id="hs_access_form_user_email" class="form-control js_access_email" type="text" name="email" autocomplete="off" placeholder="введите e-mail пользователя, которого хотите добавить (или несколько через запятую)" title="">
+                            <div class="js_email_error"></div>
+                        </th>
+                        <th style="width:20%;vertical-align:top;">
+                            <select class="form-control js_access_role" name="role" title="">
+                                <option value="ROLE_SCRIPT_READER">оператор</option>
+                                <option value="ROLE_SCRIPT_WRITER">админ</option>
+                            </select>
+                            <div class="js_email_error"></div>
+                        </th>
+                        <th style="width:10%;vertical-align:top;">
+                            <input id="hs_access_folder_form_submit_btn" type="submit" class="btn btn-default js_add_access_folder_user" value="Добавить">
+                            <div class="js_glob_error"></div>
+                        </th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+    <nav class="navbar navbar-inverse" style="z-index: 100;">
+
+        <div class="container-fluid">
+            
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="/">
+                    <img class="logo_arrow" src="https://hyper-script.ru/themes/hyperscript/img/logo_s.png">
+                    <h1 style =  "color:white; position:absolute; top:-10px; left:50px;">EasySales</h1>
+                </a>
+            </div>
+
+            
+        </div>
+    </nav>
+    <style>
+        #hs-banner {
+            display: none;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 99;
+            width: 768px;
+            border-radius: 5px;
+            background: linear-gradient(104.62deg, #34454F 0%, #3B6078 99.53%);
+            box-shadow: 0 10px 20px rgba(0,0,0,.25);
+        }
+        #hs-banner.is-open {
+            display: block;
+        }
+        .go-hyper-script-banner {
+            position: relative;
+        }
+        .go-hyper-script-banner-container {
+            height: 418px;
+            display: flex;
+        }
+        .go-hyper-script-banner-close {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+        }
+        .go-hyper-script-banner-close button {
+            border: none;
+            background: transparent;
+            transform: scale(.65);
+        }
+        .go-hyper-script-banner-image {
+            flex: 1 1 0%;
+            display: flex;
+            align-items: flex-end;
+        }
+        .go-hyper-script-banner-image img {
+            width: 350px;
+            border-bottom-right-radius: 5px;
+        }
+        .go-hyper-script-banner-text {
+            padding: 20px 50px 0 60px;
+        }
+        .go-hyper-script-banner-text h1 {
+            color: white;
+            font-size: 22px;
+        }
+        .go-hyper-script-banner-text p {
+            color: #94A7B0;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+        .go-hyper-script-banner-text hr {
+            margin: 25px 0;
+            background: #94A7B0;
+            box-shadow: none;
+            border: none;
+            height: 2px;
+        }
+        .go-hyper-script-banner-text .go-hyper-script-banner-green-button {
+            display: block;
+            border: none;
+            background: #35D266;
+            border-radius: 7px;
+            width: 100%;
+            color: #fff;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            padding: 15px;
+            text-align: center;
+        }
+        @media (max-width: 991.98px) {
+            #hs-banner {
+                width: 100%;
+                right: 0;
+                bottom: 0;
+                border-radius: 0;
+            }
+            .go-hyper-script-banner-text {
+                padding: 10px 30px 30px 30px;
+            }
+            .go-hyper-script-banner-container {
+                height: auto;
+            }
+            .go-hyper-script-banner-image {
+                display: none;
+            }
+            .go-hyper-script-banner-text hr {
+                margin: 10px 0;
+            }
+            .go-hyper-script-banner-text p {
+                margin-bottom: 10px;
+            }
+            .go-hyper-script-banner-text .go-hyper-script-banner-green-button {
+                margin-top: 20px;
+            }
+        }
+    </style>
+    <div id="hs-banner">
+        <div class="go-hyper-script-banner">
+            <div class="go-hyper-script-banner-close">
+                <button onclick="closeGoHsBanner()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" fill="none" stroke="#a9c2d1" stroke-width="4" stroke-linecap="round"><path d="M36.063 12.021L12.021 36.062"></path><path d="M36.063 36.063L12.021 12.021"></path></svg>
+                </button>
+            </div>
+            <div class="go-hyper-script-banner-container">
+                <div class="go-hyper-script-banner-text">
+                    <div>
+                        <h1>Привет! <br>У нас крутое обновление!</h1>
+                        <hr>
+                        <p>Последние несколько месяцев мы много работали над улучшением нашего продукта.</p>
+                        <p>И сегодня хотим представить Вам новый функционал прохода скриптов - это обновленный дизайн, повышенная стабильность и новый удобный интерфейс. Для того, чтобы попробовать просто нажмите кнопку:</p>
+                        <a href="https://go.hyper-script.ru/" target="_blank" class="go-hyper-script-banner-green-button" onclick="movedGoHs()">
+                            Перейти в GO
+                        </a>
+                    </div>
+                </div>
+                <div class="go-hyper-script-banner-image">
+                    <div>
+                        <img src="data:image/png;base64,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" alt="go.hyper-script.ru">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+       
+                function movedGoHs() {
+                    document.getElementById('hs-banner').classList.remove('is-open')
+                }
+
+                function closeGoHsBanner() {
+                    sessionStorage.setItem('hide-go-hs-banner', '1')
+                    document.getElementById('hs-banner').classList.remove('is-open')
+                }
+
+                function detectionHsBanner() {
+                    if (sessionStorage.getItem('hide-go-hs-banner') !== '1') {
+                        document.getElementById('hs-banner').classList.add('is-open')
+                    } else {
+                        document.getElementById('hs-banner').classList.remove('is-open')
+                    }
+                }
+                detectionHsBanner()
+            </script>
+    <div class="js_scripts_list_box_wrap" style="display: block;">
+        <button class="btn btn-default js_back_to_list" style="display: inline-block;"><span class="glyphicon glyphicon-chevron-left"></span></button>
+		<div class="dropdown js_scripts_list_box">
+			<button class="btn btn-default dropdown-toggle" type="button" id="z4s41nb233fgrgq" data-toggle="dropdown" aria-expanded="false" data-cy="js-scripts-list-into-constructor--button">
+				<span class="js_selected_script_name" data-cy="js-selected-script-name">ыввы</span>
+                <span class="type-label-in-edit-mode is-script" data-cy="type-label-in-edit-mode">Скрипт</span>
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu js_scripts_list" role="menu" aria-labelledby="z4s41nb233fgrgq" data-cy="js-scripts-list-into-constructor--menu">
+				<li role="presentation" class="no-search">
+					<a class="js_new_script" data-cy="js-new-script-into-constructor" role="menuitem" tabindex="-1" href="#">
+            <span class="glyphicon glyphicon-plus"></span> Добавить скрипт
+          </a>
+          <a class="js_new_quiz" data-cy="js-new-quiz-into-constructor" role="menuitem" tabindex="-1" href="#">
+            <span class="glyphicon glyphicon-plus"></span> Добавить квиз
+          </a>
+				</li>
+                                <li class="no-search no-click"><input type="text" class="form-control detail-search" placeholder="Введите название скрипта для поиска"></li>
+                <li role="separator" class="divider no-search"></li>
+									<li role="presentation">
+						<a class="js_show_script" data-id="328884" data-after-label="Скрипт" data-type="script" role="menuitem" tabindex="-1" href="#">
+              ff
+            </a>
+					</li>
+									<li role="presentation">
+						<a class="js_show_script" data-id="328869" data-after-label="Скрипт" data-type="script" role="menuitem" tabindex="-1" href="#">
+              Шаблон инструкции Обработка входящих документов
+            </a>
+					</li>
+									<li role="presentation">
+						<a class="js_show_script" data-id="328868" data-after-label="Скрипт" data-type="script" role="menuitem" tabindex="-1" href="#">
+              Шаблон исходящего звонка по заявке интернет-магазина
+            </a>
+					</li>
+									<li role="presentation">
+						<a class="js_show_script active" data-id="328870" data-after-label="Скрипт" data-type="script" role="menuitem" tabindex="-1" href="#">
+              ыввы
+            </a>
+					</li>
+							</ul>
+		</div>
+        <div class="btn-group js_script_menu">
+            <button id="hs_script_menu_btn" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a id="hs_rename_script_btn" class="js_rename_script" href="#"><span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;Изменить название</a></li>
+                <li><a id="hs_copy_script_btn" href="#" class="js_copy_script"><span class="glyphicon glyphicon-duplicate"></span>&nbsp;&nbsp;Скопировать</a></li>
+                <li class="dropdown menu_folders">
+                    <a href="#" data-toggle="dropdown"><span class="glyphicon glyphicon-folder-close"></span>&nbsp;&nbsp;Переместить <span class="move-folder"><span class="glyphicon glyphicon-chevron-right"></span></span></a>
+                    <ul class="dropdown-menu"></ul>
+                </li>
+            </ul>
+        </div>
+        <span class="only-script">
+          <div class="target" style="">
+              <div class="input-group">
+                  <span class="input-group-addon"><span class="glyphicon glyphicon-record"></span> Цель</span>
+                  <input type="text" class="form-control js_script_target" placeholder="Например, назначить встречу с ЛПР">
+              </div>
+          </div>
+        </span>
+        <div class="sales-infos" style="display: inline-block;">
+            <div class="sales-info">
+                <b>Конверсия</b>
+                <br>
+                <span class="js_conversion_count">0</span>%
+            </div>
+
+            <div class="sales-info">
+                <b>Проходы</b>
+                <br>
+                <span class="js_passages_count">0</span>
+            </div>
+        </div>
+        <div class="script-buttons" style="display: block;">
+            <a id="hs_delete_script_btn" class="btn btn-default btn-sm js_scripts_action_delete"><span class="glyphicon glyphicon-trash"></span></a>
+        </div>
+	</div>
+    
+   
+<!--<![endif]-->
+
+<!--[if lt IE 7]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+<![endif]-->
+
+<!--[if lt IE 8]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+<![endif]-->
+
+
+<script type="text/javascript">
+var autofrantApiUrl = "https://data.autofrant.ru";
+var analyticsApiUrl = "https://analytics.hyper-script.ru/";
+var draftsApiUrl = "https://drafts.hyper-script.ru/";
+</script>
+<script>
+// $(document).ready(function(){
+//     tinymce.init({
+//         selector:'textarea.js_number_formula',
+//         menubar: false,
+//         // inline: true,
+//         toolbar: false,
+//         init_instance_callback: function(editor) {
+//             editor.on('input', function(e) {
+//                 console.log('The text color of ');
+//             });
+//         }
+//         // plugins: [ 'quickbars' ],
+//         // quickbars_insert_toolbar: 'undo redo',
+//         // quickbars_selection_toolbar: 'italic underline'
+//     });
+// })
+                  var email = 'support@hyper-script.ru';
+       </script>
+
+       <script>
+        document.sourceFields = {"SELF":"\u0421\u0432\u043e\u0439 \u043a\u043e\u043d\u0442\u0430\u043a\u0442","PARTNER":"\u0421\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044e\u0449\u0438\u0439 \u043a\u043b\u0438\u0435\u043d\u0442","CALL":"\u0417\u0432\u043e\u043d\u043e\u043a","WEB":"\u0412\u0435\u0431-\u0441\u0430\u0439\u0442","EMAIL":"\u042d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u0430\u044f \u043f\u043e\u0447\u0442\u0430","CONFERENCE":"\u041a\u043e\u043d\u0444\u0435\u0440\u0435\u043d\u0446\u0438\u044f","TRADE_SHOW":"\u0412\u044b\u0441\u0442\u0430\u0432\u043a\u0430","EMPLOYEE":"\u0421\u043e\u0442\u0440\u0443\u0434\u043d\u0438\u043a","COMPANY":"\u041a\u0430\u043c\u043f\u0430\u043d\u0438\u044f","HR":"HR - \u0434\u0435\u043f\u0430\u0440\u0442\u0430\u043c\u0435\u043d\u0442","MAIL":"\u041f\u0438\u0441\u044c\u043c\u043e","OTHER":"\u0414\u0440\u0443\u0433\u043e\u0435"};
+        document.currencyB24 = {"RUB":"\u0420\u0443\u0431\u043b\u044c","USD":"\u0414\u043e\u043b\u043b\u0430\u0440 \u0421\u0428\u0410","EUR":"\u0415\u0432\u0440\u043e","UAH":"\u0413\u0440\u0438\u0432\u043d\u0430","BYN":"\u0411\u0435\u043b\u043e\u0440\u0443\u0441\u0441\u043a\u0438\u0439 \u0440\u0443\u0431\u043b\u044c"};
+</script>
+
+
+
+
+</body>
+</html>

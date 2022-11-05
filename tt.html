@@ -1,0 +1,598 @@
+<head>
+    <meta charset="UTF-8">
+    <title>HyperScript – инструмент увеличения телефонных продаж</title>
+
+    <link href="C:\Users\User1\Desktop\hyperscript_pro\bootstrap\css\bootstrap.css" rel="stylesheet" type="text/css" media="screen">
+<link href="C:\Users\User1\Desktop\hyperscript_pro\js\fancybox\jquery.fancybox.css" type="text/css" rel="stylesheet">
+<link href="C:\Users\User1\Desktop\hyperscript_pro\css\jquery-ui.min.css" type="text/css" rel="stylesheet">
+
+
+<link href="C:\Users\User1\Desktop\hyperscript_pro\js\select2-4.0.13\css\select2.min.css" type="text/css" rel="stylesheet">
+<link href="C:\Users\User1\Desktop\hyperscript_pro\js\select2-bootstrap-theme-0.1.0-beta.10\select2-bootstrap.min.css" type="text/css" rel="stylesheet">
+
+<link href="C:\Users\User1\Desktop\hyperscript_pro\css\jquery.multiselect.css" type="text/css" rel="stylesheet">
+<link href="C:\Users\User1\Desktop\hyperscript_pro\css\jquery.multiselect.filter.css" type="text/css" rel="stylesheet">
+<link href="C:\Users\User1\Desktop\hyperscript_pro\css\style.css" type="text/css" rel="stylesheet">
+<link href="C:\Users\User1\Desktop\hyperscript_pro\css\new-core.css" type="text/css" rel="stylesheet">
+        
+<link href="C:\Users\User1\Desktop\hyperscript_pro\bundles\spscript\css\script_tour.css" type="text/css" rel="stylesheet">
+<link href="C:\Users\User1\Desktop\hyperscript_pro\themes\hyperscript\css\style.css" rel="stylesheet" type="text/css">
+<link href="C:\Users\User1\Desktop\hyperscript_pro\themes\hyperscript\css\font.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="C:\Users\User1\Desktop\hyperscript_pro\css\tinymcetextpagestyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.0/jquery.contextMenu.min.css" type="text/css">
+<link rel="stylesheet" href="C:\Users\User1\Desktop\hyperscript_pro\bundles\spscript\css\quiz.css" type="text/css">
+    <link href="C:\Users\User1\Desktop\hyperscript_pro\bundles\spscript\css\script.css" type="text/css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+        <!-- Google Tag Manager -->
+<script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript" async="" src="https://top-fwz1.mail.ru/js/code.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-WMY7V8TFPS&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MHTBG7Q"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MHTBG7Q');</script>
+<!-- End Google Tag Manager -->
+<script async="" src="https://call.chatra.io/chatra.js"></script><style>@-webkit-keyframes chatra-chat-appear-from-bottom {
+from {
+opacity: 0;
+-webkit-transform: translateY(20px) scale(.97);
+transform: translateY(20px) scale(.97);
+}
+
+to {
+opacity: 1;
+-webkit-transform: translateY(0) scale(1);
+transform: translateY(0) scale(1);
+}
+}
+@keyframes chatra-chat-appear-from-bottom {
+from {
+opacity: 0;
+-webkit-transform: translateY(20px) scale(.97);
+transform: translateY(20px) scale(.97);
+}
+
+to {
+opacity: 1;
+-webkit-transform: translateY(0) scale(1);
+transform: translateY(0) scale(1);
+}
+}
+@-webkit-keyframes chatra-chat-appear-from-top {
+from {
+opacity: 0;
+-webkit-transform: translateY(-20px) scale(.97);
+transform: translateY(-20px) scale(.97);
+}
+
+to {
+opacity: 1;
+-webkit-transform: translateY(0) scale(1);
+transform: translateY(0) scale(1);
+}
+}
+@keyframes chatra-chat-appear-from-top {
+from {
+opacity: 0;
+-webkit-transform: translateY(-20px) scale(.97);
+transform: translateY(-20px) scale(.97);
+}
+
+to {
+opacity: 1;
+-webkit-transform: translateY(0) scale(1);
+transform: translateY(0) scale(1);
+}
+}
+@-webkit-keyframes chatra-chat-appear {
+from {
+opacity: 0;
+-webkit-transform: scale(.95);
+transform: scale(.95);
+}
+
+to {
+opacity: 1;
+-webkit-transform: scale(1);
+transform: scale(1);
+}
+}
+@keyframes chatra-chat-appear {
+from {
+opacity: 0;
+-webkit-transform: scale(.95);
+transform: scale(.95);
+}
+
+to {
+opacity: 1;
+-webkit-transform: scale(1);
+transform: scale(1);
+}
+}
+@-webkit-keyframes chatra-round-button-appear {
+from {
+opacity: 0;
+-webkit-transform: scale(.5);
+transform: scale(.5);
+}
+
+to {
+opacity: 1;
+-webkit-transform: scale(1);
+transform: scale(1);
+}
+}
+@keyframes chatra-round-button-appear {
+from {
+opacity: 0;
+-webkit-transform: scale(.5);
+transform: scale(.5);
+}
+
+to {
+opacity: 1;
+-webkit-transform: scale(1);
+transform: scale(1);
+}
+}
+@-webkit-keyframes chatra-tab-button-appear {
+from {
+opacity: 0;
+-webkit-transform: scale(.9);
+transform: scale(.9);
+}
+
+to {
+opacity: 1;
+-webkit-transform: scale(1);
+transform: scale(1);
+}
+}
+@keyframes chatra-tab-button-appear {
+from {
+opacity: 0;
+-webkit-transform: scale(.9);
+transform: scale(.9);
+}
+
+to {
+opacity: 1;
+-webkit-transform: scale(1);
+transform: scale(1);
+}
+}
+@-webkit-keyframes chatra-transparent-appear {
+from {
+opacity: 0;
+}
+
+to {
+opacity: 1;
+}
+}
+@keyframes chatra-transparent-appear {
+from {
+opacity: 0;
+}
+
+to {
+opacity: 1;
+}
+}
+html.chatra-mobile-widget-expanded,
+body.chatra-mobile-widget-expanded {
+overflow: hidden !important;
+height: 100% !important;
+width: 100% !important;
+position: fixed !important;
+margin: 0 !important;
+top: 0 !important;
+left: 0 !important;
+}
+#chatra {
+visibility: hidden;
+opacity: 0;
+position: fixed;
+max-height: calc(100% - 40px);
+max-width: calc(100% - 40px);
+-webkit-transition: .2s linear;
+transition: .2s linear;
+-webkit-transition-property: visibility,opacity;
+transition-property: visibility,opacity;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+width: auto;
+height: auto;
+min-height: 0;
+min-width: 0;
+display: block;
+-webkit-box-sizing: content-box;
+box-sizing: content-box;
+padding: 0;
+margin: 0;
+}
+@media print {
+#chatra {
+display: none;
+}
+}
+#chatra__iframe-wrapper,
+#chatra__iframe {
+left: 0 !important;
+top: 0 !important;
+height: 100% !important;
+width: 100% !important;
+min-width: 100% !important;
+max-width: 100% !important;
+min-height: 100% !important;
+max-height: 100% !important;
+margin: 0 !important;
+padding: 0 !important;
+display: block !important;
+background: transparent !important;
+opacity: 1;
+-webkit-transform: none;
+transform: none;
+}
+#chatra__iframe-wrapper {
+position: absolute;
+-webkit-box-shadow: 0 0 3px rgba(0,0,0,0.1),0 0 10px rgba(0,0,0,0.3);
+box-shadow: 0 0 3px rgba(0,0,0,0.1),0 0 10px rgba(0,0,0,0.3);
+overflow: hidden !important;
+}
+#chatra #chatra__iframe-wrapper,
+#chatra.chatra--safari #chatra__iframe,
+#chatra.chatra--webkit.chatra--expanded #chatra__iframe {
+border-radius: 12px;
+}
+#chatra.chatra--mobile-widget:not(.chatra--expanded),
+#chatra.chatra--mobile-widget:not(.chatra--expanded) * {
+cursor: pointer;
+}
+#chatra.chatra--safari #chatra__iframe {
+-webkit-mask-image: -webkit-gradient(linear,left top, left bottom,from(#000),to(#000));
+-webkit-mask-image: linear-gradient(#000,#000);
+mask-image: -webkit-gradient(linear,left top, left bottom,from(#000),to(#000));
+mask-image: linear-gradient(#000,#000);
+-webkit-mask-position: 50% 50%;
+mask-position: 50% 50%;
+-webkit-mask-size: 100% 100%;
+mask-size: 100% 100%;
+-webkit-mask-repeat: no-repeat;
+mask-repeat: no-repeat;
+}
+#chatra:not(.chatra--expanded) #chatra__iframe-wrapper {
+-webkit-transition: .2s linear;
+transition: .2s linear;
+-webkit-transition-property: -webkit-box-shadow;
+transition-property: -webkit-box-shadow;
+transition-property: box-shadow;
+transition-property: box-shadow, -webkit-box-shadow;
+}
+#chatra:not(.chatra--expanded):hover #chatra__iframe-wrapper {
+-webkit-box-shadow: 0 0 3px rgba(0,0,0,0.1),0 0 15px rgba(0,0,0,0.4);
+box-shadow: 0 0 3px rgba(0,0,0,0.1),0 0 15px rgba(0,0,0,0.4);
+}
+#chatra.chatra--visible {
+visibility: visible;
+opacity: 1;
+}
+#chatra.chatra--animating {
+-webkit-transition: 350ms cubic-bezier(.25,.1,0,1);
+transition: 350ms cubic-bezier(.25,.1,0,1);
+-webkit-transition-property: height,width,max-width,max-height,top,bottom,left,right,-webkit-transform;
+transition-property: height,width,max-width,max-height,top,bottom,left,right,-webkit-transform;
+transition-property: height,width,max-width,max-height,top,bottom,left,right,transform;
+transition-property: height,width,max-width,max-height,top,bottom,left,right,transform,-webkit-transform;
+}
+#chatra.chatra--style-round:not(.chatra--expanded) #chatra__iframe-wrapper,
+#chatra.chatra--style-round.chatra--safari:not(.chatra--expanded) #chatra__iframe {
+border-radius: 50%;
+}
+#chatra.chatra--custom-button:not(.chatra--expanded) {
+visibility: hidden !important;
+opacity: 0 !important;
+pointer-events: none;
+-webkit-transition: none;
+transition: none;
+}
+#chatra.chatra--fast-toggle.chatra--style-round:not(.chatra--expanded) #chatra__iframe-wrapper {
+-webkit-animation: chatra-round-button-appear 150ms ease-out 50ms both;
+animation: chatra-round-button-appear 150ms ease-out 50ms both;
+}
+#chatra.chatra--fast-toggle.chatra--style-tab:not(.chatra--expanded) #chatra__iframe-wrapper {
+-webkit-animation: chatra-tab-button-appear 150ms ease-out 50ms both;
+animation: chatra-tab-button-appear 150ms ease-out 50ms both;
+}
+#chatra.chatra--fast-toggle.chatra--expanded #chatra__iframe-wrapper {
+-webkit-animation: chatra-chat-appear 150ms ease-out 50ms both;
+animation: chatra-chat-appear 150ms ease-out 50ms both;
+}
+#chatra.chatra--fast-toggle.chatra--transparent #chatra__iframe-wrapper {
+-webkit-animation-name: chatra-transparent-appear;
+animation-name: chatra-transparent-appear;
+}
+#chatra.chatra--fast-toggle.chatra--expanded:not(.chatra--mobile-widget):not(.chatra--transparent) #chatra__iframe-wrapper {
+-webkit-animation-name: chatra-chat-appear-from-bottom;
+animation-name: chatra-chat-appear-from-bottom;
+}
+#chatra.chatra--fast-toggle.chatra--pos-top.chatra--expanded:not(.chatra--mobile-widget):not(.chatra--transparent) #chatra__iframe-wrapper {
+-webkit-animation-name: chatra-chat-appear-from-top;
+animation-name: chatra-chat-appear-from-top;
+}
+#chatra.chatra--expanded #chatra__iframe-wrapper {
+-webkit-box-shadow: 0 0 3px rgba(0,0,0,0.1),0 5px 50px rgba(0,0,0,0.2);
+box-shadow: 0 0 3px rgba(0,0,0,0.1),0 5px 50px rgba(0,0,0,0.2);
+}
+#chatra.chatra--side-bottom {
+bottom: 20px;
+}
+#chatra.chatra--side-left {
+left: 20px;
+}
+#chatra.chatra--side-left.chatra--style-tab:not(.chatra--expanded) {
+left: 10px;
+}
+#chatra.chatra--side-right {
+right: 20px;
+}
+#chatra.chatra--side-right.chatra--style-tab:not(.chatra--expanded) {
+right: 10px;
+}
+#chatra.chatra--side-left.chatra--expanded {
+bottom: 20px;
+left: 20px;
+}
+
+#chatra.chatra--side-right.chatra--expanded {
+bottom: 20px;
+right: 20px;
+}
+#chatra.chatra--pos-right {
+right: 20px;
+}
+#chatra.chatra--pos-left {
+left: 20px;
+}
+#chatra.chatra--pos-center {
+left: 50%;
+}
+#chatra.chatra--pos-top.chatra--style-tab:not(.chatra--expanded) {
+bottom: 100%;
+margin-bottom: -20px;
+}
+#chatra.chatra--pos-top.chatra--style-round:not(.chatra--expanded) {
+top: 20px;
+}
+#chatra.chatra--pos-bottom:not(.chatra--expanded) {
+bottom: 20px;
+}
+#chatra.chatra--pos-middle:not(.chatra--expanded) {
+bottom: 50%;
+}
+#chatra.chatra--mobile-widget.chatra--expanded:not(.chatra--transparent) {
+max-width: none;
+max-height: none;
+top: 0 !important;
+bottom: 0 !important;
+}
+#chatra.chatra--mobile-widget.chatra--expanded #chatra__iframe-wrapper,
+#chatra.chatra--safari.chatra--mobile-widget.chatra--expanded #chatra__iframe,
+#chatra.chatra--webkit.chatra--mobile-widget.chatra--expanded #chatra__iframe {
+border-radius: .1px;
+}
+#chatra.chatra--mobile-widget.chatra--expanded.chatra--pos-right:not(.chatra--transparent) {
+right: 0;
+}
+#chatra.chatra--mobile-widget.chatra--expanded.chatra--pos-left:not(.chatra--transparent) {
+left: 0;
+}
+#chatra.chatra--mobile-widget.chatra--expanded.chatra--pos-center:not(.chatra--transparent) {
+left: 0;
+}
+#chatra.chatra--mobile-widget.chatra--expanded.chatra--side-right:not(.chatra--transparent) {
+right: 0;
+}
+#chatra.chatra--mobile-widget.chatra--expanded.chatra--side-left:not(.chatra--transparent) {
+left: 0;
+}
+#chatra.chatra--transparent.chatra--expanded {
+bottom: 10px;
+}
+#chatra.chatra--transparent.chatra--expanded #chatra__iframe-wrapper {
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+#chatra.chatra--side-left.chatra--transparent,
+#chatra.chatra--pos-left.chatra--transparent {
+left: 10px;
+}
+#chatra.chatra--side-right.chatra--transparent,
+#chatra.chatra--pos-right.chatra--transparent {
+right: 10px;
+}
+#chatra.chatra--mobile-widget.chatra--transparent {
+max-height: 300px;
+}
+#chatra.chatra--bg-white {
+background: #fff;
+}
+</style><style type="text/css">.fancybox-margin{margin-right:17px;}</style><link rel="stylesheet" href="https://hyper-script.ru/js/tinymce/skins/lightgray/skin.min.css"></head>
+<body>
+<div class="js_box js_constructor_box fav-offset" style="display: block;">
+    <div class="zoom-btns btn-group-vertical" style="display: block;">
+          <a href="#" class="btn btn-default btn-sm js_zoom_plus"><span class="glyphicon glyphicon-plus"></span></a>
+        <a href="#" class="btn btn-default btn-sm js_zoom_reset"><span class="glyphicon glyphicon-record"></span></a>
+        <a href="#" class="btn btn-default btn-sm js_zoom_minus"><span class="glyphicon glyphicon-minus"></span></a>
+    </div>
+    <div class="js_desk" style="width: 800px; height: 600px;"><div class="step is_starred jsplumb-draggable jsplumb-droppable" id="start" style="left: 0px; top: 0px;">
+<div class="text">Начало</div>
+<div class="link_start" data-toggle="tooltip" data-placement="auto left" title="Потяните, чтобы соединить с другим узлом"></div>
+
+<div class="add_step"></div>
+
+<div title="Не указан текст шага" class="no-text-error" style="display: none;"><span class="glyphicon glyphicon-exclamation-sign"></span></div>
+<div class="starred"><span data-toggle="tooltip" data-placement="auto right" title="Скрытый быстрый переход" class="is_starred glyphicon glyphicon-eye-close"></span></div>
+<div class="tasks"><span class="is_starred glyphicon glyphicon-play"></span></div>
+<div class="label label-danger step_unresolved_issues" style="display:none;" title="Нет нужного ответа">0</div>
+</div></div>
+</div>
+<nav class="navbar navbar-inverse" style="z-index: 100;">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="/">
+                <img class="logo_arrow" src="https://hyper-script.ru/themes/hyperscript/img/logo_s.png">
+                <img class="logo_main" src="https://hyper-script.ru/themes/hyperscript/img/logo.png">
+            </a>
+        </div>
+
+        
+    </div>
+</nav>
+<div class="js_scripts_list_box_wrap" style="display: block;">
+    <button class="btn btn-default js_back_to_list" style="display: inline-block;"><span class="glyphicon glyphicon-chevron-left"></span></button>
+    <div class="dropdown js_scripts_list_box">
+        <button class="btn btn-default dropdown-toggle" type="button" id="z4s41nb233fgrgq" data-toggle="dropdown" aria-expanded="false" data-cy="js-scripts-list-into-constructor--button">
+            <span class="js_selected_script_name" data-cy="js-selected-script-name">ыввы</span>
+            <span class="type-label-in-edit-mode is-script" data-cy="type-label-in-edit-mode">Скрипт</span>
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu js_scripts_list" role="menu" aria-labelledby="z4s41nb233fgrgq" data-cy="js-scripts-list-into-constructor--menu">
+            <li role="presentation" class="no-search">
+                <a class="js_new_script" data-cy="js-new-script-into-constructor" role="menuitem" tabindex="-1" href="#">
+        <span class="glyphicon glyphicon-plus"></span> Добавить скрипт
+      </a>
+      <a class="js_new_quiz" data-cy="js-new-quiz-into-constructor" role="menuitem" tabindex="-1" href="#">
+        <span class="glyphicon glyphicon-plus"></span> Добавить квиз
+      </a>
+            </li>
+                            <li class="no-search no-click"><input type="text" class="form-control detail-search" placeholder="Введите название скрипта для поиска"></li>
+            <li role="separator" class="divider no-search"></li>
+                                <li role="presentation">
+                    <a class="js_show_script" data-id="328884" data-after-label="Скрипт" data-type="script" role="menuitem" tabindex="-1" href="#">
+          ff
+        </a>
+                </li>
+                                <li role="presentation">
+                    <a class="js_show_script" data-id="328869" data-after-label="Скрипт" data-type="script" role="menuitem" tabindex="-1" href="#">
+          Шаблон инструкции Обработка входящих документов
+        </a>
+                </li>
+                                <li role="presentation">
+                    <a class="js_show_script" data-id="328868" data-after-label="Скрипт" data-type="script" role="menuitem" tabindex="-1" href="#">
+          Шаблон исходящего звонка по заявке интернет-магазина
+        </a>
+                </li>
+                                <li role="presentation">
+                    <a class="js_show_script active" data-id="328870" data-after-label="Скрипт" data-type="script" role="menuitem" tabindex="-1" href="#">
+          ыввы
+        </a>
+                </li>
+                        </ul>
+    </div>
+    <div class="btn-group js_script_menu">
+        <button id="hs_script_menu_btn" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a id="hs_rename_script_btn" class="js_rename_script" href="#"><span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;Изменить название</a></li>
+            <li><a id="hs_copy_script_btn" href="#" class="js_copy_script"><span class="glyphicon glyphicon-duplicate"></span>&nbsp;&nbsp;Скопировать</a></li>
+            <li class="dropdown menu_folders">
+                <a href="#" data-toggle="dropdown"><span class="glyphicon glyphicon-folder-close"></span>&nbsp;&nbsp;Переместить <span class="move-folder"><span class="glyphicon glyphicon-chevron-right"></span></span></a>
+                <ul class="dropdown-menu"></ul>
+            </li>
+        </ul>
+    </div>
+    <span class="only-script">
+      <div class="target" style="">
+          <div class="input-group">
+              <span class="input-group-addon"><span class="glyphicon glyphicon-record"></span> Цель</span>
+              <input type="text" class="form-control js_script_target" placeholder="Например, назначить встречу с ЛПР">
+          </div>
+      </div>
+    </span>
+    <div class="sales-infos" style="display: inline-block;">
+        <div class="sales-info">
+            <b>Конверсия</b>
+            <br>
+            <span class="js_conversion_count">0</span>%
+        </div>
+
+        <div class="sales-info">
+            <b>Проходы</b>
+            <br>
+            <span class="js_passages_count">0</span>
+        </div>
+    </div>
+    <div class="script-buttons" style="display: block;">
+        <a id="hs_delete_script_btn" class="btn btn-default btn-sm js_scripts_action_delete"><span class="glyphicon glyphicon-trash"></span></a>
+    </div>
+</div>
+
+
+<script src="/js/jquery-2.1.1.min.js"></script>
+<!--<![endif]-->
+
+<!--[if lt IE 7]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+<![endif]-->
+
+<!--[if lt IE 8]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+<![endif]-->
+
+<script src="/bundles/bazingajstranslation/js/translator.min.js?1666713239"></script>
+<script src="/js/translations/messages/ru.js?1666713239"></script>
+
+<script type="text/javascript" src="/js/fancybox/jquery.fancybox.pack.js?1666713239"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js?1666713239"></script>
+<script type="text/javascript" src="/js/jquery.md5.js?1666713239"></script>
+<script type="text/javascript" src="/js/jquery-ui.min.js?1666713239"></script>
+<script type="text/javascript" src="/js/jquery.ui.datepicker-ru.js?1666713239"></script>
+<script type="text/javascript" src="/js/app.js?1666713239"></script>
+<script type="text/javascript" src="/js/appall.js?1666713239"></script>
+<script type="text/javascript" src="/bundles/spuser/js/appuser.js?1666713239"></script>
+<script type="text/javascript" src="/bundles/spuser/js/appuserregister.js?1666713239"></script>
+<script type="text/javascript" src="/bundles/spsocial/js/appsocial.js?1666713239"></script>
+<script type="text/javascript" src="/bundles/spfeedback/js/appfeedback.js?1666713239"></script>
+<script type="text/javascript" src="/js/qqfileuploader.js?1666713239"></script>
+<script type="text/javascript" src="/bundles/spupload/js/appupload.js?1666713239"></script>
+<script type="text/javascript" src="/bundles/spupload/js/appuploadhelper.js?1666713239"></script>
+<script type="text/javascript" src="/js/jquery.multiselect.min.js?1666713239"></script>
+<script type="text/javascript" src="/js/jquery.multiselect.ru.js?1666713239"></script>
+<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js?1666713239"></script>
+
+<script type="text/javascript" src="/js/select2-4.0.13/js/select2.min.js"></script>
+<script type="text/javascript" src="/js/select2-4.0.13/js/i18n/ru.js"></script>
+<script type="text/javascript">
+var autofrantApiUrl = "https://data.autofrant.ru";
+var analyticsApiUrl = "https://analytics.hyper-script.ru/";
+var draftsApiUrl = "https://drafts.hyper-script.ru/";
+</script>
+<script>
+// $(document).ready(function(){
+//     tinymce.init({
+//         selector:'textarea.js_number_formula',
+//         menubar: false,
+//         // inline: true,
+//         toolbar: false,
+//         init_instance_callback: function(editor) {
+//             editor.on('input', function(e) {
+//                 console.log('The text color of ');
+//             });
+//         }
+//         // plugins: [ 'quickbars' ],
+//         // quickbars_insert_toolbar: 'undo redo',
+//         // quickbars_selection_toolbar: 'italic underline'
+//     });
+// })
+                  var email = 'support@hyper-script.ru';
+       </script>

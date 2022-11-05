@@ -1,0 +1,85 @@
+.richedit_warning {
+    color: red;
+}
+
+.richedit_comment {
+    color: gray;
+}
+
+.richedit_answer {
+    font-style: italic;
+}
+
+.richedit_emotion_funny {
+    color: #1ab71c;
+}
+
+.richedit_emotion_sly {
+    color: #d4d42e;
+}
+
+.richedit_emotion_care {
+    color: #0f3a9d;
+}
+
+.richedit_emotion_intrigue {
+    color: #760f8f;
+}
+
+.richedit_emotion_interrogative {
+    color: #c77d24;
+}
+
+.replaced {
+    background-color: #ddd;
+}
+
+#tinymce .js_field,
+#tinymce .js_static_field,
+.js_number_formula .js_field,
+.js_number_formula .js_static_field {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    background-color: #EEEEEE;
+    padding: 1px 3px;
+    color: #2080bb;
+}
+
+#tinymce .js_static_field {
+    color: #333;
+    border-style: dotted;
+}
+
+#tinymce p {
+    min-height: 1em;
+}
+
+#tinymce .js_embed_video {
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    background-color: #EEEEEE;
+    padding: 10px 3px;
+    text-align: center;
+    color: #2080bb;
+}
+
+#tinymce .js_embed_video_with_icon {
+    position: relative;
+    padding-top: 30px;
+}
+
+#tinymce .js_embed_video_with_icon:before {
+    content: '';
+    background-image: url('/img/embed-icon.svg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: block;
+    text-align: center;
+    top: 5px;
+    left: calc( 50% - 10px);
+}

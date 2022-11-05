@@ -1,0 +1,121 @@
+.script_tour_wrap {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+    /*background: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 15px;*/
+}
+
+.script_tour_wrap .goal {
+    position: relative;
+    padding: 3px 0px 0px 3px;
+    font-size: 15px;
+    font-weight: bold;
+    max-width: 300px;
+}
+
+.script_tour_wrap .goal.current {
+    background: #EEE;
+    border-radius: 5px;
+}
+
+.script_tour_wrap .goal .glyphicon {
+    position: absolute;
+    left: -20px;
+    top: 5px;
+    color: red;
+}
+
+.script_tour_wrap .goal.done .glyphicon.undone {
+    display: none;
+}
+
+.script_tour_wrap .goal .glyphicon.done {
+    display: none;
+}
+
+.script_tour_wrap .goal.done .glyphicon.done {
+    display: block;
+}
+
+.script_goal_highlight {
+    position: fixed;
+    left: 0;
+    top: 0;
+    max-width: 200px;
+    pointer-events: none;
+    padding: 2px;
+    z-index: 11;
+    display: block;
+}
+
+.goal_constructor {
+    z-index: 1;
+}
+
+.script_goal_highlight .glyphicon.left {
+    font-size: 26px;
+    position: absolute;
+    left: -19px;
+    top: 7px;
+}
+
+.script_goal_highlight .glyphicon.right {
+    font-size: 26px;
+    position: absolute;
+    right: -19px;
+    top: 7px;
+}
+
+.script_goal_highlight .glyphicon.up {
+    font-size: 26px;
+    position: absolute;
+    left: 11px;
+    top: -19px;
+}
+
+.script__item-stats {
+    height: 40px;
+}
+
+.script-card__type-label {
+    display: inline-flex;
+    padding: 2px 8px;
+    margin: 0 0 7px 7px;
+    background: #000;
+    border-radius: 11px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.script-card.is-script .script-card__type-label,
+.type-label-in-edit-mode.is-script {
+    background-color: #33c77b;
+}
+
+.script-card.is-quiz .script-card__type-label,
+.type-label-in-edit-mode.is-quiz {
+    background-color: #984ea0;
+}
+
+.script-card.is-quiz .panel:hover {
+    border-top-color: #984ea0;
+}
+
+.script-card.is-script .panel:hover {
+    border-top-color: #33c77b;
+}
+
+.type-label-in-edit-mode {
+    position: relative;
+    top: -5px;
+    display: inline-block;
+    padding: 2px 8px;
+    margin: 0 5px 0 5px;
+    background: #000;
+    border-radius: 11px;
+    font-size: 12px;
+    color: #fff;
+}
