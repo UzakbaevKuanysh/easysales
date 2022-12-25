@@ -2152,3 +2152,21 @@ h4.currentFolder {
 .width-min-120 .select2-container {
     min-width: 136px;
 }
+
+.quanysh{
+    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:larger;
+    font-weight:bold;
+    color:rgb(8, 3, 8);
+    margin:10x 50px;
+    width:fit-content;
+    padding:10px 100px;
+    border:1px solid #c9f333;
+    background-color:#c9f333;
+    border-radius:10px;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
